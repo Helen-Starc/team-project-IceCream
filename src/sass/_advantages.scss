@@ -52,6 +52,8 @@ h6 {
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
     display: flex;
+    flex-wrap: wrap;
+	gap: 30px;
   }
 }
 
@@ -65,13 +67,31 @@ h6 {
 
 .advantage__main {
     color: rgba(252, 252, 252, 1);
-    @include font(36px, 1.17, 700, none);
+    @include font(700, 36px, 1.17, none);
     text-align: center;
 	margin-bottom: 18px;
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 16px;
 	}
 }
+
+.advantage__text {
+    color: rgba(252, 252, 252, 1);
+    @include font(400, 16px, 1.75, null);
+    text-align: center;
+	margin-bottom: 18px;
+	
+}
+
+.advantage__list {
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+        margin-bottom: 180px;
+}
+}
+
 
 .advantage__item:first-child::before {
   content: 'cow';
@@ -83,14 +103,14 @@ h6 {
 .advantage__item:nth-child(2)::before {
   content: 'weight';
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   background-color: rgba(248, 210, 78, 1);
 }
 .advantage__item:last-child::before {
   content: 'ice cream';
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   background-color: rgba(248, 210, 78, 1);
 }
