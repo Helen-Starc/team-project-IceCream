@@ -1,0 +1,18 @@
+.advantage__item:first-child::before {
+    content: "cow";
+    width: 36px;
+    height: 36px;
+    background-color: rgba(248, 210, 78, 1);
+}
+.advantage__item:nth-child(2)::before {
+    content: "weight";
+    width: 36px;
+    height: 36px;
+    background-color: rgba(248, 210, 78, 1);
+}
+.advantage__item:last-child::before {
+    content: "ice cream";
+    width: 36px;
+    height: 36px;
+    background-color: rgba(248, 210, 78, 1);
+}
