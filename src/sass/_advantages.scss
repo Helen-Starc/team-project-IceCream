@@ -31,10 +31,6 @@ h6 {
   }
 }
 
-.section__other--background {
-  
-}
-
 .visually__hidden {
   position: absolute;
   width: 1px;
@@ -47,12 +43,25 @@ h6 {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.advantage {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
+
+.section {
+}
+.section__other--background {
+    background-color: var($primary-color);
 }
 
+.advantage {
+}
+.list {
+}
+.advantage__item {
+}
+.advantage__title {
+}
+.advantage__text {
+}
+.advantage__position {
+}
 
 .advantage__item:first-child::before {
   content: 'cow';
