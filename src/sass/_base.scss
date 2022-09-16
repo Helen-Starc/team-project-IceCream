@@ -1,5 +1,16 @@
 body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.04em;
-  color: $dark-font-color;
+  color: $color-text-dark;
+  background: $color-bg-main;
+}
+
+.btn {
+  letter-spacing: inherit;
+  text-align: center;
+  color: $color-text-dark;
+  background-color: $color-btn-active;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
 }
