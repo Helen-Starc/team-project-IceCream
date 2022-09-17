@@ -1,0 +1,31 @@
+.backdrop {
+  position: fixed;
+}
+.modal-hero {
+  padding: 28px;
+  max-width: 280px;
+  background-color: $color-text-light;
+  border-radius: 10px;
+  border: 2px solid $color-accent;
+}
+.modal-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-text-dark;
+}
+.modal-btn-close {
+  //   width: 16px;
+  //   height: 16px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.li-one {
+  margin: 0 auto;
+  width: 130px;
+  height: 200px;
+  border: 1px solid black;
+}
