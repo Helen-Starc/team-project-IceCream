@@ -5,6 +5,37 @@ body {
   background: $color-bg-main;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include mobile {
+    .container {
+      width: 480px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @include tablet {
+    .container {
+      width: 768px;
+      padding-left: 31px;
+      padding-right: 31px;
+    }
+  }
+
+  @include desctop {
+    .container {
+      width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
 .btn {
   letter-spacing: inherit;
   text-align: center;
