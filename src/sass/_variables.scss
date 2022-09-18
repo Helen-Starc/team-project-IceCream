@@ -1,9 +1,34 @@
-$light-font-color: #fcfcfc;
-$dark-font-color: #131313;
-$gray-desc-font: #ababab;
-$brown-desc-font: #d6936d;
-$copyright-text-color: #7a7a7a;
+$color-text-light: #fcfcfc;
+$color-text-dark: #131313;
+$color-text-gray: #ababab;
+$color-text-orange: #d6936d;
+$color-text-brown: #7a7a7a;
 
-$accent-color: #f8d24e;
-$primary-color: #84a178;
-$secondary-color: #ffffff;
+$color-accent: #f8d24e;
+
+$color-bg-main: #84a178;
+$color-bg-light: #ffffff;
+$color-bg-light-green: #aec6a5;
+$color-bg-light-yellow: #efd478;
+$color-bg-light-orange: #d6936d;
+
+$color-backdrop: rgba(0, 0, 0, 0.2);
+
+$color-icon-light: #fcfcfc;
+$color-icon-dark: #131313;
+$color-icon-yellow: #f8d24e;
+$color-icon-bg: #fcfcfc;
+
+$color-btn-active: #f8d24e;
+$color-btn-hover-focus: #0a8817;
+$color-btn-disabled: #ababab;
+
+$color-link-active: #f8d24e;
+$color-link-hover: #0a8817;
+$color-link-focus: #fcfcfc;
+$color-link-disabled: #ababab;
+
+$color-inputs-bg: rgba(248, 210, 78, 0.1);
+
+$transition-duration: 250ms;
+$transition-function: cubic-bezier(0.4, 0, 0.2, 1);
