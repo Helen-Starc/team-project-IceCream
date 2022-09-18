@@ -110,11 +110,13 @@
   @include desctop {
     margin-bottom: 40px;
   }
-  content: 'weight';
+  content: '';
   border-radius: 50%;
   width: 50px;
   height: 50px;
   background-color: rgba(248, 210, 78, 1);
+  background-image: url(../images/weight.png);
+  background-size: contain;
 }
 .advantage__item:last-child::before {
   position: relative;
@@ -125,9 +127,11 @@
   @include desctop {
     margin-bottom: 40px;
   }
-  content: 'ice cream';
+  content: '';
   border-radius: 50%;
   width: 50px;
   height: 50px;
   background-color: rgba(248, 210, 78, 1);
+  background-image: url(../images/ice\ crema.png);
+  background-size: contain;
 }
