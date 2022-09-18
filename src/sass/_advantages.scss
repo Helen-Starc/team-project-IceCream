@@ -48,16 +48,14 @@
 
 .advantage__title {
   margin-bottom: 18px;
-  margin-top: 23px;
+
   color: $color-text-light;
   @include font(700, 36px, 1.17, null);
   @include tablet {
     @include font(700, 48px, 1.21, null);
-    margin-top: 32px;
   }
   @include desctop {
     @include font(700, 58px, 1.21, null);
-    margin-top: 40px;
   }
 }
 .advantage__text {
@@ -81,6 +79,12 @@
 .advantage__item:first-child::before {
   position: relative;
   margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desctop {
+    margin-bottom: 40px;
+  }
   content: 'cow';
   border-radius: 50%;
   width: 50px;
@@ -90,6 +94,12 @@
 .advantage__item:nth-child(2)::before {
   position: relative;
   margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desctop {
+    margin-bottom: 40px;
+  }
   content: 'weight';
   border-radius: 50%;
   width: 50px;
@@ -99,6 +109,12 @@
 .advantage__item:last-child::before {
   position: relative;
   margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desctop {
+    margin-bottom: 40px;
+  }
   content: 'ice cream';
   border-radius: 50%;
   width: 50px;
