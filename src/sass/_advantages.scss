@@ -15,7 +15,7 @@
 .advantage__title {
 }
 .advantage__text {
-  @mixin font(700, 36px, 1.17, null)
+  @include font(700, 36px, 1.17, null)
 }
 .advantage__position {
 }
