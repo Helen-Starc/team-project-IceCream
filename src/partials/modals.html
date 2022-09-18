@@ -1,5 +1,5 @@
 <div class="backdrop backdrop--is-hidden">
-  <div class="modal-hero">
+  <div class="modal modal-hero">
     <h2 class="modal-title">Buy now</h2>
     <button type="button" class="modal-btn-close">
       <svg class="modal-icon-close" width="20" height="20">
@@ -9,7 +9,15 @@
     <form class="form-hero">
       <ul class="form-hero-list list">
         <li class="form-hero-item item-one">
-          <span class="item-text">Ice cream</span>
+          <label>
+            <span class="item-text">Ice cream</span>
+            <input
+              class="visually-hidden check-ice-cream"
+              type="checkbox"
+              name="ice-cream"
+              value="true"
+            />
+          </label>
         </li>
         <li class="form-hero-item item-two">
           <span class="item-text">Ice coffee</span>
@@ -50,10 +58,106 @@
 </div>
 <!-- <div class="backdrop backdrop--is-hidden">
   <div class="modal-products"></div>
-</div>
-<div class="backdrop backdrop--is-hidden">
-  <div class="modal-about"></div>
-</div>
-<div class="backdrop backdrop--is-hidden">
-  <div class="modal-franchise"></div>
 </div> -->
+<div class="backdrop backdrop--is-hidden">
+  <div class="modal modal-locatios">
+    <h2 class="modal-title">Our Locations</h2>
+    <button type="button" class="modal-btn-close">
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <div class="modals-thumb">
+      <img src="./images/modals/modal-lock-mob-img1.jpg" alt="locations" />
+    </div>
+    <a
+      href="https://goo.gl/maps/maSsx5Yk2prJAdCM9"
+      target="_blank"
+      rel="noopener, noreferrer, nofollow"
+      class="modal-locatios-link"
+      >Open map</a
+    >
+  </div>
+</div>
+<div class="backdrop backdrop--is-hidden">
+  <div class="modal modal-about">
+    <h2 class="modal-title">How it's made?</h2>
+    <button type="button" class="modal-btn-close">
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <div class="video">
+      <iframe
+        class="video-item"
+        src="https://www.youtube.com/embed/pqxtkxVbceA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="modal-about-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>
+<div class="backdrop backdrop--is-hidden">
+  <div class="modal modal-franchise">
+    <h2 class="modal-title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+    <button type="button" class="modal-btn-close">
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <p class="modal-franchse-text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="form-hero">
+      <label class="form-hero-fild">
+        <input
+          class="fild-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+      </label>
+      <label class="form-hero-fild">
+        <input
+          class="fild-input"
+          type="tel"
+          name="tel"
+          placeholder="Phone"
+          required
+        />
+      </label>
+      <label class="form-hero-fild">
+        <input
+          class="fild-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <label class="form-hero-fild">
+        <textarea
+          class="fild-text"
+          type="text"
+          name="text"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="button" class="btn form-hero-submit">Submit</button>
+    </form>
+  </div>
+</div>
