@@ -3,7 +3,7 @@
 }
 
 .section__other--background {
-    background-color: $color-bg-main;
+  background-color: $color-bg-main;
 }
 
 .advantage {
@@ -17,7 +17,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 .advantage__item {
@@ -27,28 +26,25 @@
   align-items: center;
   justify-content: center;
   &:last-child {
-		margin-bottom: 0px;
-	}
-	
-	@include tablet {
-		width: calc((100% - 64px) / 3);		
-		margin-bottom: 0px;
-		&:last-child {
-			margin-right: 0px;
-		}
-	}
-  
+    margin-bottom: 0px;
+  }
+
+  @include tablet {
+    width: calc((100% - 64px) / 3);
+    margin-bottom: 0px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
 }
 
 .advantage__list {
- 
 }
 
 .advantage__title {
   margin-bottom: 18px;
   color: $color-text-light;
-  @include font(700, 36px, 1.17, null)
-  
+  @include font(700, 36px, 1.17, null);
 }
 .advantage__text {
   display: flex;
@@ -57,10 +53,10 @@
   width: 230px;
   height: 40px;
   color: $color-text-light;
-  @include font(700, 12px, 1.7, null)
+  @include font(700, 12px, 1.7, null);
   @include tablet {
     width: 152px;
-  height: 99px;
+    height: 99px;
   }
 }
 
@@ -70,27 +66,27 @@
 .advantage__item:first-child::before {
   position: relative;
   margin-bottom: 16px;
-    content: 'cow';
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(248, 210, 78, 1);
-  }
-  .advantage__item:nth-child(2)::before {
-    position: relative;
-    margin-bottom: 16px;
-    content: 'weight';
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(248, 210, 78, 1);
-  }
-  .advantage__item:last-child::before {
-    position: relative;
-    margin-bottom: 16px;
-    content: 'ice cream';
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: rgba(248, 210, 78, 1);
-  }
+  content: 'cow';
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(248, 210, 78, 1);
+}
+.advantage__item:nth-child(2)::before {
+  position: relative;
+  margin-bottom: 16px;
+  content: 'weight';
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(248, 210, 78, 1);
+}
+.advantage__item:last-child::before {
+  position: relative;
+  margin-bottom: 16px;
+  content: 'ice cream';
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(248, 210, 78, 1);
+}
