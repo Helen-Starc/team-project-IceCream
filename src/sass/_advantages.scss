@@ -9,7 +9,13 @@
 .advantage {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 21px;
+  @include tablet {
+    gap: 80px;
+  }
+  @include desctop {
+    gap: 32px;
+  }
 }
 
 .advantage__box {
@@ -53,9 +59,11 @@
   @include font(700, 36px, 1.17, null);
   @include tablet {
     @include font(700, 48px, 1.21, null);
+    margin-bottom: 16px;
   }
   @include desctop {
     @include font(700, 58px, 1.21, null);
+    margin-bottom: 16px;
   }
 }
 .advantage__text {
@@ -65,7 +73,7 @@
   color: $color-text-light;
   @include font(700, 12px, 1.7, null);
   @include tablet {
-    @include font(700, 14px, 1.7, null);
+    @include font(400, 14px, 1.7, null);
     width: 152px;
     height: 99px;
   }
@@ -85,11 +93,13 @@
   @include desctop {
     margin-bottom: 40px;
   }
-  content: 'cow';
+  content: '';
   border-radius: 50%;
   width: 50px;
   height: 50px;
   background-color: rgba(248, 210, 78, 1);
+  background-image: url(../images/cow\ \(1\).png);
+  background-size: contain;
 }
 .advantage__item:nth-child(2)::before {
   position: relative;
