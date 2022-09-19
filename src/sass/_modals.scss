@@ -45,6 +45,16 @@
   color: $color-text-dark;
   text-align: center;
 }
+.modal-hero-title {
+  margin-bottom: 84px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-text-dark;
+  text-align: center;
+}
 .modal-btn-close {
   position: absolute;
 
@@ -66,69 +76,131 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 86px;
-  margin-bottom: 25px;
+  gap: 84px;
+  margin-bottom: 24px;
 }
 .form-hero-item {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 132px;
-  height: 136px;
   border-radius: 16px;
-  padding-bottom: 20px;
+  // padding-bottom: 20px;
 }
 .item-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  width: 132px;
+  height: 136px;
+  border: 2px solid $color-bg-light-green;
+  border-radius: 16px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 }
-.item-one {
-  border: 2px solid $color-bg-light-green;
-}
-.item-one::before {
-  content: ' ';
+.icecream-bg-clr {
   position: absolute;
-  top: -66px;
+  top: -58px;
+  left: 0;
   width: 132px;
   height: 132px;
   border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-  background-image: url(../images/modals/modal-hero-img1.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
-
-.item-two {
-  border: 2px solid $color-bg-light-yellow;
-  background-color: $color-bg-light-yellow;
-}
-.item-two::before {
-  content: ' ';
+.icecream-bg-clr::before {
+  content: '';
   position: absolute;
-  top: -66px;
+  top: -7px;
+  width: 132px;
+  height: 132px;
+  background-image: url(../images/modals/modal-hero-img1.png);
+}
+.check-ice-cream:checked .icecream-text {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+}
+.icecoffee-text {
+  border: 2px solid $color-bg-light-yellow;
+}
+.icecoffee-bg-clr {
+  position: absolute;
+  top: -58px;
+  left: 0;
   width: 132px;
   height: 132px;
   border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.icecoffee-bg-clr::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 132px;
+  height: 132px;
   background-image: url(../images/modals/modal-hero-img2.png);
 }
-.item-three {
+.check-ice-coffee:checked .icecoffee-text {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+}
+.milkshake-text {
   border: 2px solid $color-bg-light-orange;
 }
-.item-three::before {
-  content: ' ';
+.milkshake-bg-clr {
   position: absolute;
-  top: -66px;
+  top: -58px;
+  left: 0;
   width: 132px;
   height: 132px;
   border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+.milkshake-bg-clr::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 132px;
+  height: 132px;
   background-image: url(../images/modals/modal-hero-img3.png);
 }
+.check-milkshake:checked .milkshake-text {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+}
+
 .form-hero-fild {
   display: block;
   color: inherit;
@@ -140,6 +212,11 @@
   border: 1px solid $color-bg-main;
   border-radius: 10px;
   margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.fild-input:invalid:not(:placeholder-shown) {
+  border-color: red;
 }
 .fild-input::placeholder {
   color: inherit;
@@ -155,6 +232,8 @@
   border: 1px solid $color-bg-main;
   border-radius: 10px;
   margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.4;
 }
 .fild-text::placeholder {
   color: inherit;
@@ -188,6 +267,7 @@
 }
 .video-item {
   width: 100%;
+  border: none;
 }
 .modal-about-text {
   font-size: 14px;
@@ -334,6 +414,11 @@
   border: 1px solid $color-bg-main;
   border-radius: 10px;
   margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.products-fild-input:invalid:not(:placeholder-shown) {
+  border-color: red;
 }
 .products-fild-input::placeholder {
   color: inherit;
@@ -349,6 +434,8 @@
   border: 1px solid $color-bg-main;
   border-radius: 10px;
   margin-bottom: 32px;
+  font-size: 12px;
+  line-height: 1.4;
 }
 .products-fild-text::placeholder {
   color: inherit;

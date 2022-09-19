@@ -1,6 +1,6 @@
 <div class="backdrop backdrop--is-hidden">
   <div class="modal modal-hero">
-    <h2 class="modal-title">Buy now</h2>
+    <h2 class="modal-hero-title">Buy now</h2>
     <button type="button" class="modal-btn-close">
       <svg class="modal-icon-close" width="20" height="20">
         <use href="./images/icons.svg#icon-menu-close"></use>
@@ -8,22 +8,44 @@
     </button>
     <form class="form-hero">
       <ul class="form-hero-list">
-        <li class="form-hero-item item-one">
-          <label>
-            <span class="item-text">Ice cream</span>
-            <input
-              class="visually-hidden check-ice-cream"
-              type="checkbox"
-              name="ice-cream"
-              value="true"
-            />
+        <li class="form-hero-item">
+          <input
+            id="icecream"
+            class="visually-hidden check-ice-cream"
+            type="checkbox"
+            name="product"
+            value="ice-cream"
+          />
+          <span class="icecream-bg-clr"></span>
+          <label for="icecream" class="icecream-label">
+            <span class="item-text icecream-text">Ice cream</span>
           </label>
         </li>
-        <li class="form-hero-item item-two">
-          <span class="item-text">Ice coffee</span>
+        <li class="form-hero-item">
+          <input
+            id="icecoffee"
+            class="visually-hidden check-ice-coffee"
+            type="checkbox"
+            name="product"
+            value="ice-coffee"
+          />
+          <span class="icecoffee-bg-clr"></span>
+          <label for="icecoffee" class="icecoffee-label">
+            <span class="item-text icecoffee-text">Ice cream</span>
+          </label>
         </li>
-        <li class="form-hero-item item-three">
-          <span class="item-text">Milkshake</span>
+        <li class="form-hero-item">
+          <input
+            id="milkshake"
+            class="visually-hidden check-milkshake"
+            type="checkbox"
+            name="product"
+            value="milkshake"
+          />
+          <span class="milkshake-bg-clr"></span>
+          <label for="milkshake" class="milkshake-label">
+            <span class="item-text milkshake-text">Milkshake</span>
+          </label>
         </li>
       </ul>
       <label class="form-hero-fild">
@@ -33,6 +55,9 @@
           name="name"
           placeholder="Name"
           required
+          minlength="2"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
         />
       </label>
       <label class="form-hero-fild">
@@ -40,19 +65,20 @@
           class="fild-input"
           type="tel"
           name="tel"
-          placeholder="Phone"
+          placeholder="Phone: 099-00-00-000"
           required
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
+          title="Enter the phone number in the format 099-00-00-000"
         />
       </label>
       <label class="form-hero-fild">
         <textarea
           class="fild-text"
-          type="text"
           name="text"
           placeholder="Comment"
         ></textarea>
       </label>
-      <button type="button" class="btn form-hero-submit">Submit</button>
+      <button type="submit" class="btn form-hero-submit">Submit</button>
     </form>
   </div>
 </div>
@@ -134,6 +160,9 @@
           name="name"
           placeholder="Name"
           required
+          minlength="2"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
         />
       </label>
       <label class="form-products-fild">
@@ -141,19 +170,20 @@
           class="products-fild-input"
           type="tel"
           name="tel"
-          placeholder="Phone"
+          placeholder="Phone: 099-00-00-000"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
+          title="Enter the phone number in the format 099-00-00-000"
           required
         />
       </label>
       <label class="form-products-fild">
         <textarea
           class="products-fild-text"
-          type="text"
           name="text"
           placeholder="Comment"
         ></textarea>
       </label>
-      <button type="button" class="btn form-hero-submit">Submit</button>
+      <button type="submit" class="btn form-hero-submit">Submit</button>
     </form>
   </div>
 </div>
@@ -190,7 +220,6 @@
         class="video-item"
         src="https://www.youtube.com/embed/pqxtkxVbceA"
         title="YouTube video player"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
@@ -202,7 +231,7 @@
     </p>
   </div>
 </div>
-<div class="backdrop backdrop--is-hidden">
+<div class="backdrop backdrop--is-hidde">
   <div class="modal modal-franchise">
     <h2 class="modal-title">
       Thank you for your interest in owning an Ice Cream shop
@@ -227,6 +256,9 @@
           name="name"
           placeholder="Name"
           required
+          minlength="2"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
         />
       </label>
       <label class="form-hero-fild">
@@ -234,7 +266,9 @@
           class="fild-input"
           type="tel"
           name="tel"
-          placeholder="Phone"
+          placeholder="Phone: 099-00-00-000"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
+          title="Enter the phone number in the format 099-00-00-000"
           required
         />
       </label>
@@ -250,12 +284,11 @@
       <label class="form-hero-fild">
         <textarea
           class="fild-text"
-          type="text"
           name="text"
           placeholder="Comment"
         ></textarea>
       </label>
-      <button type="button" class="btn form-hero-submit">Submit</button>
+      <button type="submit" class="btn form-hero-submit">Submit</button>
     </form>
   </div>
 </div>
