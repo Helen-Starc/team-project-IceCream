@@ -7,7 +7,7 @@
       </svg>
     </button>
     <form class="form-hero">
-      <ul class="form-hero-list list">
+      <ul class="form-hero-list">
         <li class="form-hero-item item-one">
           <label>
             <span class="item-text">Ice cream</span>
@@ -56,9 +56,9 @@
     </form>
   </div>
 </div>
-<div class="backdrop backdrop--is-hidde">
+<div class="backdrop backdrop--is-hidden">
   <div class="modal modal-product-icecream">
-    <h2 class="modal-title">Chololate icecream</h2>
+    <h2 class="modal-title modal-product-title">Chololate icecream</h2>
     <button type="button" class="modal-btn-close">
       <svg class="modal-icon-close" width="20" height="20">
         <use href="./images/icons.svg#icon-menu-close"></use>
@@ -67,12 +67,94 @@
     <div class="thumd-icecream">
       <img
         class="icecream-img"
-        src="./images/modals/modal-products-icecream-img1.jpg"
+        src="./images/modals/modal-products-icecream-img1.png"
         alt="ice cream"
         width="131"
         height="131"
       />
     </div>
+    <ul class="modal-products-list">
+      <li class="products-item">
+        <div class="thumd-products-item">
+          <span class="products-item-num">320</span>
+          <p class="products-item-text">kcal</p>
+        </div>
+      </li>
+      <li class="products-item">
+        <div class="thumd-products-item">
+          <span class="products-item-num">4g</span>
+          <p class="products-item-text">Protein</p>
+        </div>
+      </li>
+      <li class="products-item">
+        <div class="thumd-products-item">
+          <span class="products-item-num">8,2g</span>
+          <p class="products-item-text">Fast</p>
+        </div>
+      </li>
+      <li class="products-item">
+        <div class="thumd-products-item">
+          <span class="products-item-num">40,4g</span>
+          <p class="products-item-text">Carbs</p>
+        </div>
+      </li>
+    </ul>
+    <p class="modal-products-pretitle">Ingredients</p>
+    <ul class="products-ingred-list">
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Milk</p>
+        <p class="products-ingred-title">100ml</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Belgian chocolate</p>
+        <p class="products-ingred-title">20g</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Cream</p>
+        <p class="products-ingred-title">150 ml</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Cocoa powder</p>
+        <p class="products-ingred-title">30g</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Sugar</p>
+        <p class="products-ingred-title">40g</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Vanilla sugar</p>
+        <p class="products-ingred-title">10g</p>
+      </li>
+    </ul>
+    <form class="form-products">
+      <label class="form-products-fild">
+        <input
+          class="products-fild-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+      </label>
+      <label class="form-products-fild">
+        <input
+          class="products-fild-input"
+          type="tel"
+          name="tel"
+          placeholder="Phone"
+          required
+        />
+      </label>
+      <label class="form-products-fild">
+        <textarea
+          class="products-fild-text"
+          type="text"
+          name="text"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="button" class="btn form-hero-submit">Submit</button>
+    </form>
   </div>
 </div>
 <div class="backdrop backdrop--is-hidden">

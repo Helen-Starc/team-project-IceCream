@@ -235,14 +235,123 @@
 }
 
 // MODAL PRODUCTS ICECRAEM
-.thumd-icecream {
-  margin: 0 auto;
-  width: 131px;
 
+.modal-product-icecream {
+  padding: 28px 20px 32px 20px;
+}
+.modal-product-title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 142px;
+}
+.thumd-icecream {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 131px;
+  height: 131px;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   border-radius: 50%;
   overflow: hidden;
 }
 .icecream-img {
+  position: absolute;
+  top: -7px;
   width: 100%;
+}
+.modal-products-list {
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+}
+.thumd-products-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.products-item-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 43px;
+  height: 43px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  background-color: #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+}
+.products-item-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+}
+.modal-products-pretitle {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.products-ingred-list {
+  margin-bottom: 48px;
+}
+.products-ingred-item {
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+.products-ingred-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+}
+.form-products-fild {
+  display: block;
+  color: inherit;
+}
+.products-fild-input {
+  background-color: rgba(248, 210, 78, 0.1);
+  padding: 11px;
+  width: 100%;
+  border: 1px solid $color-bg-main;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.products-fild-input::placeholder {
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.products-fild-text {
+  resize: none;
+  background-color: rgba(248, 210, 78, 0.1);
+  padding: 11px;
+  width: 100%;
+  height: 84px;
+  border: 1px solid $color-bg-main;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+.products-fild-text::placeholder {
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.4;
 }
