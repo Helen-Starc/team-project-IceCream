@@ -115,6 +115,7 @@
 
 .social__icon {
   fill: currentColor;
+  transition: fill $transition-duration $transition-function;
 }
 
 .footer__contacts {
