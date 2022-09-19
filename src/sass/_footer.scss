@@ -1,0 +1,238 @@
+.footer {
+    background-color: #84A178;
+}
+
+
+.container-center {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.container-footer {
+    padding-top: 1144px;
+    margin-top: -1024px;
+    max-width: 320px;
+
+    @media (min-width: 768px) {
+        padding-top: 374px;
+        margin-top: -254px;
+        min-width: 768px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 664px;
+        margin-top: -544px;
+        max-width: 1200px;
+    }
+}
+
+.footer__title {
+    @media (min-width: 1200px) {
+        white-space: nowrap;
+    }
+}
+
+
+.footer__title-text {
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FCFCFC;
+
+    @media (max-width: 767px) {
+        width: 240px;
+        font-size: 18px;
+        line-height: 1.17;
+        font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+        width: 350px;
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    }
+
+    @media (min-width: 1200px) {
+        width: 472px;
+        font-size: 30px;
+        line-height: 1.14;
+        letter-spacing: 0.04em;
+    }
+}
+
+.text-second {
+    color: #ffff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family: #FCFCFC;
+    font-weight: 700;
+    line-height: 1.14;
+
+    @media (max-width: 767px) {
+        width: 232px;
+        font-size: 34px;
+        letter-spacing: 0.04em;
+    }
+
+    @media (min-width: 768px) {
+        width: 340px;
+        font-size: 48px;
+        letter-spacing: 0.06em;
+    }
+
+    @media (min-width: 1200px) {
+        width: 480px;
+        font-size: 58px;
+        letter-spacing: 0.06em;
+    }
+}
+
+.footer__socials {
+    @media (min-width: 768px) {
+        margin-top: -140px;
+    }
+}
+
+.footer__socials-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+}
+
+.footer__socials-item {
+    width: 34px;
+    height: 34px;
+    margin-right: 30px;
+    cursor: pointer;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.social__link {
+    color: #84A178;
+    background-color: #F8D24E;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+        color: #FCFCFC;
+    }
+}
+
+.social__icon {
+    fill: currentColor;
+}
+
+.footer__contacts {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.footer__contacts-text {
+    margin-left: auto;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 186%;
+    padding-right: 5px;
+    color: #131313;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+}
+
+.footer__contacts-tel {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 186%;
+    color: #FCFCFC;
+
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+}
+
+.footer__bottom {
+    display: block;
+    text-align: center;
+    border-top: 1px solid #E1E1E1;
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer__bottom-copyright {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    color: #7A7A7A;
+    margin-right: 5px;
+
+    @media (max-width: 767px) {
+        line-height: 152%;
+    }
+
+    @media (min-width: 768px) {
+        line-height: 186%;
+        letter-spacing: 0.02em;
+    }
+}
+
+.footer__bottom-reserved {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    color: #7A7A7A;
+
+    @media (max-width: 767px) {
+        line-height: 152%;
+    }
+
+    @media (min-width: 768px) {
+        line-height: 186%;
+        letter-spacing: 0.02em;
+    }
+}
