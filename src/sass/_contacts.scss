@@ -1,5 +1,5 @@
 ul {
-        margin-block-start: 0;
+    margin-block-start: 0;
     margin-block-end: 0;
 }
 .section--contacts { 
@@ -85,6 +85,13 @@ color: inherit;
 }
 &__link--location {
     color: $color-text-orange;
+    text-decoration: none;
+
+    transition: text-decoration 250ms $transition-function;
+
+    &:hover, &:focus {
+        text-decoration:underline;
+    }
 }
 
 
@@ -114,7 +121,7 @@ color: inherit;
         flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 16px;    
     @include tablet {
     flex-direction: row;
 justify-content: center;
@@ -136,6 +143,11 @@ justify-content: center;
     width: 196px;
 
     @include font(600, 14px, 1.29, inherit);
+
+    transition: border-color 250ms $transition-function, 
+    background-color 250ms $transition-function,
+    color 250ms $transition-function;
+
 }
 &__btn--locations {
     border: 2px solid $color-btn-active;
@@ -143,8 +155,10 @@ justify-content: center;
 &__icon {
     width: 12px;
     height: 12px;
-    fill: $color-icon-dark;
-    background-color: transparent;
+    fill: transparent;
+    stroke: currentColor;
+    // fill: $color-icon-dark;
+    // background-color: transparent;
 }
 &__btn--franchise {
     background: transparent;
@@ -164,8 +178,8 @@ justify-content: center;
         border-color: $color-btn-disabled;
     }
 }
-.contacts__btn--locations:hover .contacts__icon {
-    fill: currentColor;
+.contacts__btn--locations:focus .contacts__icon {
+    stroke: currentColor;
 }
 .contacts__btn--franchise {
     &:hover, &:focus {
@@ -178,6 +192,6 @@ justify-content: center;
         border-color: $color-btn-disabled;
     }
 }
-.contacts__btn--franchise:hover .contacts__icon {
-    fill: currentColor;
+.contacts__btn--franchise:focus .contacts__icon {
+    stroke: currentColor;
 }
