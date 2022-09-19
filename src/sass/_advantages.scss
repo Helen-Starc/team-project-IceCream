@@ -1,0 +1,136 @@
+.list {
+  list-style: none;
+}
+
+.section__other--background {
+  background-color: $color-bg-main;
+}
+
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+  @include tablet {
+    gap: 80px;
+  }
+  @include desctop {
+    gap: 32px;
+  }
+}
+
+.advantage__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantage__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  @include tablet {
+    width: calc((100% - 160px) / 3);
+    margin-bottom: 0px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  @include desctop {
+    width: calc((100% - 64px) / 3);
+    margin-bottom: 0px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.advantage__title {
+  margin-bottom: 18px;
+  color: $color-text-light;
+  @include font(700, 36px, 1.17, null);
+  @include tablet {
+    @include font(700, 48px, 1.21, null);
+    margin-bottom: 16px;
+  }
+  @include desctop {
+    @include font(700, 58px, 1.21, null);
+    margin-bottom: 16px;
+  }
+}
+.advantage__text {
+  text-align: center;
+  width: 230px;
+  height: 40px;
+  color: $color-text-light;
+  @include font(700, 12px, 1.7, null);
+  @include tablet {
+    @include font(400, 14px, 1.7, null);
+    width: 152px;
+    height: 99px;
+  }
+  @include desctop {
+    @include font(400, 16px, 1.76, null);
+    width: 368px;
+    height: 52px;
+  }
+}
+
+.advantage__item:first-child::before {
+  position: relative;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desctop {
+    margin-bottom: 40px;
+  }
+  content: '';
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: $color-icon-yellow;
+  background-image: url(../images/cow\ \(1\).png);
+  background-size: contain;
+}
+.advantage__item:nth-child(2)::before {
+  position: relative;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desctop {
+    margin-bottom: 40px;
+  }
+  content: '';
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: $color-icon-yellow;
+  background-image: url(../images/weight.png);
+  background-size: contain;
+}
+.advantage__item:last-child::before {
+  position: relative;
+  margin-bottom: 16px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
+  @include desctop {
+    margin-bottom: 40px;
+  }
+  content: '';
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: $color-icon-yellow;
+  background-image: url(../images/ice\ crema.png);
+  background-size: contain;
+}
