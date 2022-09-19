@@ -1,0 +1,28 @@
+
+button {
+    cursor: pointer;
+}
+.btn {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-color: transparent;
+    background: transparent;
+
+@media screen and (min-width: 768px) {
+        margin-top: 40px;
+    }
+        @media screen and (min-width: 1200px) {
+                margin-top: 160px;
+            }
+}
+
+.btn :hover {
+    fill: #2196F3;
+}
+.btn:focus {
+    fill:#2196F3;
+}
+ 
