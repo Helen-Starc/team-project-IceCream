@@ -1,197 +1,240 @@
-ul {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-.section--contacts { 
-    padding-top: 48px;
-    padding-bottom: 38px;
-}
 .contacts {
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-top: 80px;
+  }
+
+  @include desctop {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
   &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 60px;
+    }
+    @include desctop {
+      gap: 32px;
+    }
+  }
+
+  &__card {
+    display: block;
+    width: 100%;
+    padding: 40px 32px;
+
+    background: $color-text-light;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      width: calc((100% - 16px * 2) / 3);
+      padding: 40px 24px;
+    }
+    @include desctop {
+      width: calc((100% - 32px * 2) / 3);
+    }
+  }
+
+  &__grow-wrap {
+    flex-grow: 1;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-right: auto;
+
+    padding-right: 24px;
+    padding-left: 24px;
+
+    margin-bottom: 20px;
+
+    background: $color-accent;
+    border-radius: 4px;
+
+    @include font(500, 12px, 145%, inherit);
+    color: inherit;
+
+    @include tablet {
+      font-size: 16px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+  &__wrap--location {
+    padding-bottom: 24px;
+  }
+
+  &__support {
+    padding-top: 24px;
+    border-top: 1px solid #e1e1e1;
+  }
+
+  &__shedule {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid #e1e1e1;
+  }
+
+  &__text {
+    @include font(500, 12px, 1.86, inherit);
+    @include tablet {
+      font-size: 14px;
+    }
+    @include desctop {
+      font-size: 16px;
+    }
+  }
+
+  &__text--location {
+    margin-bottom: 8px;
+  }
+
+  &__link--location {
+    color: $color-text-orange;
+    text-decoration: none;
+
+    transition: text-decoration $transition-duration $transition-function;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  .shedule__item--time {
+    color: $color-text-gray;
+  }
+
+  .support__link {
+    @include font(500, 12px, 1.5, inherit);
+    color: $color-text-dark;
+
+    transition: color $transition-duration $transition-function;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+    &:disabled {
+      color: $color-link-disabled;
+    }
+
+    @include tablet {
+      @include font(500, 14px, 183%, inherit);
+    }
+  }
+
+  &__btns {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 32px;
-
-@include tablet {
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
     gap: 16px;
-    margin-bottom: 60px;
-}
-@include desctop {
-    gap: 32px;
-}
-  }
-&__card {
-    display: block;
-    width: calc(100% - 40px);
-    max-width: 440px; 
-
-    padding: 40px 32px;
-    
-    background: $color-text-light;
-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-border-radius: 24px;
-
-@include tablet {
-    width: calc((100% / 3) - 32px); 
-    max-width: 224px;
-}
-@include desctop {
-    max-width: 368px;
-}
-}
-&__title {
-    display: inline-block;
-    margin-right: auto;
-
-    padding-right: 23px;
-    padding-left: 23px;
-    
-    margin-bottom: 20px;
-
-background: $color-accent;
-border-radius: 4px;
-
-font-family: 'Montserrat';
-font-style: normal;
-@include font(500, 12px, 1.86, inherit);
-color: inherit;
-@include tablet {
-    font-size: 16px;
-}
-}
-&__wrap--location, &__shedule {
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-
-    border-bottom: 1px solid #E1E1E1;
-}
-&__text {
-    @include font(500, 12px, 1.86, inherit);
     @include tablet {
-        font-size: 14px;
+      flex-direction: row;
+      justify-content: center;
     }
     @include desctop {
-        font-size: 16px;
+      font-weight: 16px;
     }
-}
-&__text--location {
-    margin-bottom: 8px;
-}
-&__link--location {
-    color: $color-text-orange;
-    text-decoration: none;
+  }
 
-    transition: text-decoration 250ms $transition-function;
-
-    &:hover, &:focus {
-        text-decoration:underline;
-    }
-}
-
-
-
-
-
-// .list {
-// }
-// .shedule__item {
-// }
-
-.shedule__item--time {
-    color: $color-text-gray;
-}
-// .contacts__support {
-// }
-// .support__item {
-// }
-.support__link {
-    @include font(500, 12px, 1.5, inherit);
-    @include tablet {
-        @include font(500, 14px, 1.83, inherit);
-    }
-}
-&__btns {
-    display: flex;
-        flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;    
-    @include tablet {
-    flex-direction: row;
-justify-content: center;
-}
-@include desctop {
-    font-weight: 16px;
-}
-}
-.btns__item {
+  .btns__item {
     display: block;
-}
+  }
 
-&__btn {
+  &__btn {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
+    gap: 8px;
 
     padding: 12px 24px;
     width: 196px;
 
     @include font(600, 14px, 1.29, inherit);
 
-    transition: border-color 250ms $transition-function, 
-    background-color 250ms $transition-function,
-    color 250ms $transition-function;
+    transition: border-color 250ms $transition-function,
+      background-color 250ms $transition-function,
+      color 250ms $transition-function;
+  }
 
-}
-&__btn--locations {
+  &__btn--locations {
     border: 2px solid $color-btn-active;
-}
-&__icon {
+  }
+
+  &__icon {
     width: 12px;
     height: 12px;
     fill: transparent;
     stroke: currentColor;
-    // fill: $color-icon-dark;
-    // background-color: transparent;
-}
-&__btn--franchise {
+  }
+
+  &__btn--franchise {
     background: transparent;
     border: 2px solid $color-btn-active;
     border-radius: 10px;
-}}
+  }
+}
+
 .contacts__btn--locations {
-    &:hover, &:focus {
-        background-color: $color-btn-hover-focus;
-        border-color: $color-btn-hover-focus;
-    }
-    &:focus {
-        color: $color-text-light;
-    }
-    &:disabled {
-        background-color: $color-btn-disabled;
-        border-color: $color-btn-disabled;
-    }
+  transition: background-color $transition-duration $transition-function,
+    border-color $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-hover-focus;
+    border-color: $color-btn-hover-focus;
+  }
+
+  &:focus {
+    color: $color-text-light;
+  }
+
+  &:disabled {
+    background-color: $color-btn-disabled;
+    border-color: $color-btn-disabled;
+  }
 }
 .contacts__btn--locations:focus .contacts__icon {
-    stroke: currentColor;
+  stroke: currentColor;
 }
 .contacts__btn--franchise {
-    &:hover, &:focus {
-        border-color: $color-btn-hover-focus;
-    }
-    &:focus {
-        color: $color-text-light;
-    }
-    &:disabled {
-        border-color: $color-btn-disabled;
-    }
+  transition: border-color $transition-duration $transition-function,
+    color $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
+    border-color: $color-btn-hover-focus;
+  }
+
+  &:focus {
+    color: $color-text-light;
+  }
+
+  &:disabled {
+    border-color: $color-btn-disabled;
+  }
 }
 .contacts__btn--franchise:focus .contacts__icon {
-    stroke: currentColor;
+  stroke: currentColor;
+  transition: stroke $transition-duration $transition-function;
 }
