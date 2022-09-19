@@ -22,23 +22,31 @@
     pointer-events: none;
   }
   &--is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%);
   }
 }
 
 // MODAL-HERO
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   padding: 28px;
-  width: 280px;
+  width: 100%;
   background-color: $color-text-light;
   border-radius: 10px;
   border: 2px solid $color-accent;
 
+  transition: transform 500ms ease 150ms;
+
+  @include mobile {
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   @include tablet {
     width: 568px;
     padding: 32px 60px;
@@ -51,7 +59,6 @@
   }
 }
 .modal-title {
-  // margin-bottom: 20px;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
@@ -385,12 +392,26 @@
 
 // MODAL LOCACIONS
 
-.modals-thumb {
-  border-radius: 10px;
-  margin-bottom: 24px;
-  overflow: hidden;
+.modal-locations-title {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
-.modal-locatios-link {
+.modals-thumb {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-radius: 10px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+.locations-img {
+  margin: 0 auto;
+}
+.modal-locations-link {
   display: block;
   margin: 0 auto;
   padding-top: 12px;
@@ -404,6 +425,11 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
+
+  transition-property: color, background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
+
   &:hover {
     background-color: $color-btn-hover-focus;
   }
@@ -417,10 +443,24 @@
 
 // MODAL FRANCHISE
 
+.modal-franchise-title {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin: 0 auto;
+    width: 322px;
+    margin-bottom: 24px;
+  }
+}
 .modal-franchse-text {
   font-size: 14px;
   line-height: 1.4;
   margin-bottom: 24px;
+
+  @include tablet {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
 }
 
 // MODAL PRODUCTS ICECRAEM

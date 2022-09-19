@@ -1,4 +1,4 @@
-<div class="backdrop backdrop--is-hidde" data-backdrop>
+<div class="backdrop backdrop--is-hidden" data-backdrop>
   <div class="modal modal-hero">
     <h2 class="modal-hero-title">Buy now</h2>
     <button type="button" class="modal-btn-close" data-modal-close>
@@ -82,7 +82,7 @@
     </form>
   </div>
 </div>
-<div class="backdrop backdrop--is-hidden" data-backdrop>
+<div class="backdrop backdrop--is-hidde" data-backdrop>
   <div class="modal modal-product-icecream">
     <h2 class="modal-title modal-product-title">Chololate icecream</h2>
     <button type="button" class="modal-btn-close" data-modal-close>
@@ -188,21 +188,41 @@
   </div>
 </div>
 <div class="backdrop backdrop--is-hidden" data-backdrop>
-  <div class="modal modal-locatios">
-    <h2 class="modal-title">Our Locations</h2>
+  <div class="modal modal-locations">
+    <h2 class="modal-title modal-locations-title">Our Locations</h2>
     <button type="button" class="modal-btn-close" data-modal-close>
       <svg class="modal-icon-close" width="20" height="20">
         <use href="./images/icons.svg#icon-menu-close"></use>
       </svg>
     </button>
     <div class="modals-thumb">
-      <img src="./images/modals/modal-lock-mob-img1.jpg" alt="locations" />
+      <picture>
+        <source
+          srcset="
+            ./images/modals/modal-lock-mob-img1.jpg    1x,
+            ./images/modals/modal-lock-mob-img1@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/modals/modal-lock-desk-img1.jpg    1x,
+            ./images/modals/modal-lock-desk-img1@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="locations-img"
+          src="./images/modals/modal-lock-mob-img1.jpg"
+          alt="locations"
+        />
+      </picture>
     </div>
     <a
       href="https://goo.gl/maps/maSsx5Yk2prJAdCM9"
       target="_blank"
       rel="noopener, noreferrer, nofollow"
-      class="modal-locatios-link"
+      class="modal-locations-link"
       >Open map</a
     >
   </div>
@@ -233,7 +253,7 @@
 </div>
 <div class="backdrop backdrop--is-hidden" data-backdrop>
   <div class="modal modal-franchise">
-    <h2 class="modal-title">
+    <h2 class="modal-title modal-franchise-title">
       Thank you for your interest in owning an Ice Cream shop
     </h2>
     <button type="button" class="modal-btn-close" data-modal-close>
