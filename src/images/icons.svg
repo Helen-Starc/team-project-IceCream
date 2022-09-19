@@ -31,9 +31,7 @@
     </symbol>
 
     <symbol id="icon-btn-arrow" viewBox="0 0 32 32">
-      <path d="M10.667 5.333l13.195 10.667-13.195 10.667"></path>
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
     </symbol>
-    
-    
   </defs>
 </svg>
