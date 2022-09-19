@@ -2,7 +2,7 @@
 button {
     cursor: pointer;
 }
-.btn {
+.products__btn {
     display: block;
     justify-content: center;
     margin-left: auto;
@@ -19,10 +19,10 @@ button {
             }
 }
 
-.btn :hover {
+.products__btn :hover {
     fill: #2196F3;
 }
-.btn:focus {
+.products__btn:focus {
     fill:#2196F3;
 }
  

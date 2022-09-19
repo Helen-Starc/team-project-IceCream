@@ -29,14 +29,8 @@ button {
     padding-top: 120px;
     border-color: transparent;
     background: transparent;
+    
 }
-
-@media screen and (min-width: 768px) {
-    .products__btn {
-        padding-top: 80px;
-    }
-}
-
 @media screen and (min-width: 1200px) {
     .products__btn {
         padding-top: 120px;
@@ -113,13 +107,7 @@ button {
     background: #AEC6A5;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-}
 
-@media screen and (min-width: 768px) {
-    .products__box-green {
-        width: 224px;
-        height: 428px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -267,6 +255,51 @@ button {
     }
 }
 
+.products__cards::before {
+    content: "";
+    position: absolute;
+    width: 199px;
+    height: 197px;
+    top: 0px;
+    left: 50%;
+    z-index: 1;
+    border-radius: 50%;
+    background-position: center;
+
+}
+
+@media screen and (min-width: 220px) and (max-width: 479px) {
+    .products__cards::before {
+    
+        transform: translate(-50%, -50%);
+        background-image: url(../img/Frame65.png);
+        background-size: contain;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .products__cards::before {
+        transform: translate(-50%, -50%);
+        background-image: url(../img/Frame65.png);
+        background-size: contain;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .products__cards::before {
+        transform: translate(-50%, -50%);
+        background-image: url(../img/Frame65.png);
+        background-size: contain;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .products__cards::before {
+        width: 300px;
+            height: 300px;
+        transform: translate(-50%, -50%);
+        background-image: url(../img/Frame65.png);
+        background-size: contain;
+    }
+}
+
 .products {
     display: flex;
     flex-wrap: wrap;
@@ -282,10 +315,9 @@ button {
     }
 }
 
-
 .products__ice-name {
     text-align: center;
-
+   
 }
 
 .products__title {
@@ -315,7 +347,7 @@ button {
     }
 }
 
-.products__txt {
+.products__txt{
     width: 200px;
     height: 124px;
     font-family: "Montserrat";
@@ -345,3 +377,9 @@ button {
         font-size: 16px;
     }
 }
+
+
+
+
+
+

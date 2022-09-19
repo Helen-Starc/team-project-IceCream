@@ -5,19 +5,15 @@
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url(../img/Frame\ 18.jpg);
+    background-image: url(../img/Frame18.jpg);
+    @media screen and (min-width: 768px) {
+                padding-top: 60px;
+                padding-bottom: 80px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+                padding-top: 120px;
+                padding-bottom: 60px;
+        }
 }
 
-@media screen and (min-width: 768px) {
-    .section {
-        padding-top: 60px;
-        padding-bottom: 80px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .section {
-        padding-top: 120px;
-        padding-bottom: 60px;
-    }
-}
