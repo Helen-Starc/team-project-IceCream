@@ -8,31 +8,23 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include mobile {
-    .container {
-      width: 480px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+    width: 480px;
   }
 
   @include tablet {
-    .container {
-      width: 768px;
-      padding-left: 31px;
-      padding-right: 31px;
-    }
+    width: 768px;
+    padding-left: 31px;
+    padding-right: 31px;
   }
 
   @include desctop {
-    .container {
-      width: 1200px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
