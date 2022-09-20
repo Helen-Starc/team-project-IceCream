@@ -108,7 +108,7 @@
   text-align: center;
 
   @include mobile {
-    width: 280px;
+    width: 440px;
   }
 
   @include tablet {
@@ -125,9 +125,6 @@
     padding-left: 65px;
     padding-right: 65px;
   }
-}
-
-.products__ice-name {
 }
 
 .products__card-title {
@@ -197,11 +194,21 @@
   @include tablet {
     width: 210px;
     height: 219px;
+    background-image: url(../images/products-1-tab.png);
+
+    @include retina {
+      background-image: url(../images/products-1-tab-2x.png);
+    }
   }
 
   @include desctop {
     width: 312px;
     height: 327px;
+    background-image: url(../images/products-1-desc.png);
+
+    @include retina {
+      background-image: url(../images/products-1-desc-2x.png);
+    }
   }
 }
 
@@ -234,11 +241,21 @@
   @include tablet {
     width: 210px;
     height: 219px;
+    background-image: url(../images/products-2-tab.png);
+
+    @include retina {
+      background-image: url(../images/products-2-tab-2x.png);
+    }
   }
 
   @include desctop {
     width: 312px;
     height: 327px;
+    background-image: url(../images/products-2-desc.png);
+
+    @include retina {
+      background-image: url(../images/products-2-desc-2x.png);
+    }
   }
 }
 
@@ -271,11 +288,21 @@
   @include tablet {
     width: 210px;
     height: 219px;
+    background-image: url(../images/products-3-tab.png);
+
+    @include retina {
+      background-image: url(../images/products-3-tab-2x.png);
+    }
   }
 
   @include desctop {
     width: 312px;
     height: 327px;
+    background-image: url(../images/products-3-desc.png);
+
+    @include retina {
+      background-image: url(../images/products-3-desc-2x.png);
+    }
   }
 }
 
