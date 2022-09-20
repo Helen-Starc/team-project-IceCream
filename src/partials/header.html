@@ -1,6 +1,6 @@
 <header class="header" id="header">
   <div class="container header__container">
-    <a class="logo" href="">
+    <a class="logo" href="" data-logo>
       <img
         class="logo__img"
         srcset="./images/logo@1x.png 1x, ./images/logo@2x.png 2x"
@@ -31,7 +31,11 @@
         ></use>
       </svg>
     </button>
-    <button type="button" class="header__btn header__btn--var" data-modal-open>
+    <button
+      type="button"
+      class="header__btn header__btn--desktop"
+      data-modal-open
+    >
       Buy now
       <svg width="12" height="12" class="header__btn-icon">
         <use href="./images/icons.svg#icon-btn-arrow"></use>
@@ -56,7 +60,7 @@
       </nav>
       <button
         type="button"
-        class="header__btn header__btn--no-vissually"
+        class="header__btn header__btn--mobail"
         aria-controls="header__menu-container"
         aria-expanded="false"
         data-modal-open

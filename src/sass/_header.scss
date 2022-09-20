@@ -38,8 +38,14 @@
   display: inline-block;
   z-index: 10;
 
+  transition: transform 500ms $transition-duration;
+
   @media screen and (max-width: 767px) {
     margin-bottom: 61px;
+
+    &.indent {
+      transform: translate(10px);
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: auto;
@@ -213,7 +219,7 @@
     }
   }
 
-  &--var {
+  &--desktop {
     @media screen and (max-width: 767px) {
       display: none;
     }
@@ -225,7 +231,7 @@
     }
   }
 
-  &--no-vissually {
+  &--mobail {
     @media screen and (min-width: 768px) {
       display: none;
     }
