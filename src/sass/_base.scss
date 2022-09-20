@@ -3,6 +3,10 @@ body {
   letter-spacing: 0.04em;
   color: $color-text-dark;
   background: $color-bg-main;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .container {
