@@ -11,6 +11,7 @@ $color-bg-light: #ffffff;
 $color-bg-light-green: #aec6a5;
 $color-bg-light-yellow: #efd478;
 $color-bg-light-orange: #d6936d;
+$color-bg-menu-green: #85a279;
 
 $color-backdrop: rgba(0, 0, 0, 0.2);
 
@@ -32,3 +33,5 @@ $color-inputs-bg: rgba(248, 210, 78, 0.1);
 
 $transition-duration: 250ms;
 $transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
