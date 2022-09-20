@@ -1,0 +1,322 @@
+<div class="backdrop backdrop--is-hidden" data-backdrop>
+  <div class="modal modal-hero">
+    <h2 class="modal-hero-title">Buy now</h2>
+    <button type="button" class="modal-btn-close" data-modal-close>
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <form class="form-hero">
+      <ul class="form-hero-list">
+        <li class="form-hero-item">
+          <input
+            id="icecream"
+            class="visually-hidden check-ice-cream"
+            type="checkbox"
+            name="product"
+            value="ice-cream"
+          />
+          <span class="icecream-bg-clr"></span>
+          <label for="icecream" class="icecream-label">
+            <span class="item-text icecream-text">Ice cream</span>
+          </label>
+        </li>
+        <li class="form-hero-item">
+          <input
+            id="icecoffee"
+            class="visually-hidden check-ice-coffee"
+            type="checkbox"
+            name="product"
+            value="ice-coffee"
+          />
+          <span class="icecoffee-bg-clr"></span>
+          <label for="icecoffee" class="icecoffee-label">
+            <span class="item-text icecoffee-text">Ice coffee</span>
+          </label>
+        </li>
+        <li class="form-hero-item">
+          <input
+            id="milkshake"
+            class="visually-hidden check-milkshake"
+            type="checkbox"
+            name="product"
+            value="milkshake"
+          />
+          <span class="milkshake-bg-clr"></span>
+          <label for="milkshake" class="milkshake-label">
+            <span class="item-text milkshake-text">Milkshake</span>
+          </label>
+        </li>
+      </ul>
+      <label class="form-hero-fild">
+        <input
+          class="fild-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+      <label class="form-hero-fild">
+        <input
+          class="fild-input"
+          type="tel"
+          name="tel"
+          placeholder="Phone: 099-00-00-000"
+          required
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
+          title="Enter the phone number in the format 099-00-00-000"
+        />
+      </label>
+      <label class="form-hero-fild">
+        <textarea
+          class="fild-text"
+          name="text"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="btn form-hero-submit">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="backdrop backdrop--is-hidde" data-backdrop>
+  <div class="modal modal-product-icecream">
+    <h2 class="modal-title modal-product-title">Chololate icecream</h2>
+    <button type="button" class="modal-btn-close" data-modal-close>
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <div class="thumd-icecream">
+      <picture>
+        <source
+          srcset="
+            ./images/modals/modal-products-icecream-img1.png    1x,
+            ./images/modals/modal-products-icecream-img1@2x.png 2x
+          "
+        />
+        <img
+          class="icecream-img"
+          src="./images/modals/modal-products-icecream-img1.png"
+          alt="ice cream"
+          width="131"
+          height="131"
+        />
+      </picture>
+    </div>
+    <ul class="modal-products-list">
+      <li class="products-item">
+        <div class="thumd-products-item">
+          <span class="products-item-num">320</span>
+          <p class="products-item-text">kcal</p>
+        </div>
+      </li>
+      <li class="products-item">
+        <div class="thumd-products-item">
+          <span class="products-item-num">4g</span>
+          <p class="products-item-text">Protein</p>
+        </div>
+      </li>
+      <li class="products-item">
+        <div class="thumd-products-item">
+          <span class="products-item-num">8,2g</span>
+          <p class="products-item-text">Fast</p>
+        </div>
+      </li>
+      <li class="products-item">
+        <div class="thumd-products-item">
+          <span class="products-item-num">40,4g</span>
+          <p class="products-item-text">Carbs</p>
+        </div>
+      </li>
+    </ul>
+    <p class="modal-products-pretitle">Ingredients</p>
+    <ul class="products-ingred-list">
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Milk</p>
+        <p class="products-ingred-title">100ml</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Belgian chocolate</p>
+        <p class="products-ingred-title">20g</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Cream</p>
+        <p class="products-ingred-title">150 ml</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Cocoa powder</p>
+        <p class="products-ingred-title">30g</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Sugar</p>
+        <p class="products-ingred-title">40g</p>
+      </li>
+      <li class="products-ingred-item">
+        <p class="products-ingred-title">Vanilla sugar</p>
+        <p class="products-ingred-title">10g</p>
+      </li>
+    </ul>
+    <form class="form-products">
+      <label class="form-products-fild">
+        <input
+          class="products-fild-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+      <label class="form-products-fild">
+        <input
+          class="products-fild-input"
+          type="tel"
+          name="tel"
+          placeholder="Phone: 099-00-00-000"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
+          title="Enter the phone number in the format 099-00-00-000"
+          required
+        />
+      </label>
+      <label class="form-products-fild">
+        <textarea
+          class="products-fild-text"
+          name="text"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="btn form-hero-submit">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="backdrop backdrop--is-hidden" data-backdrop>
+  <div class="modal modal-locations">
+    <h2 class="modal-title modal-locations-title">Our Locations</h2>
+    <button type="button" class="modal-btn-close" data-modal-close>
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <div class="modals-thumb">
+      <picture>
+        <source
+          srcset="
+            ./images/modals/modal-lock-mob-img1.jpg    1x,
+            ./images/modals/modal-lock-mob-img1@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/modals/modal-lock-desk-img1.jpg    1x,
+            ./images/modals/modal-lock-desk-img1@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img
+          class="locations-img"
+          src="./images/modals/modal-lock-mob-img1.jpg"
+          alt="locations"
+        />
+      </picture>
+    </div>
+    <a
+      href="https://goo.gl/maps/maSsx5Yk2prJAdCM9"
+      target="_blank"
+      rel="noopener, noreferrer, nofollow"
+      class="modal-locations-link"
+      >Open map</a
+    >
+  </div>
+</div>
+<div class="backdrop backdrop--is-hidden" data-backdrop>
+  <div class="modal modal-about">
+    <h2 class="modal-title modal-title-about">How it's made?</h2>
+    <button type="button" class="modal-btn-close" data-modal-close>
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <div class="video">
+      <iframe
+        class="video-item"
+        src="https://www.youtube.com/embed/pqxtkxVbceA"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <p class="modal-about-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>
+<div class="backdrop backdrop--is-hidden" data-backdrop>
+  <div class="modal modal-franchise">
+    <h2 class="modal-title modal-franchise-title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+    <button type="button" class="modal-btn-close" data-modal-close>
+      <svg class="modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <p class="modal-franchse-text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="form-hero">
+      <label class="form-hero-fild">
+        <input
+          class="fild-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+      <label class="form-hero-fild">
+        <input
+          class="fild-input"
+          type="tel"
+          name="tel"
+          placeholder="Phone: 099-00-00-000"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}"
+          title="Enter the phone number in the format 099-00-00-000"
+          required
+        />
+      </label>
+      <label class="form-hero-fild">
+        <input
+          class="fild-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </label>
+      <label class="form-hero-fild">
+        <textarea
+          class="fild-text"
+          name="text"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button type="submit" class="btn form-hero-submit">Submit</button>
+    </form>
+  </div>
+</div>
