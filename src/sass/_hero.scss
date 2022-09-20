@@ -1,0 +1,333 @@
+.hero {
+  @media screen and (min-width: 320px) {
+    padding-top: 110px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 72px;
+    padding-bottom: 13px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 65px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    background-image: url(../images/dots-tab-min.png);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+    width: 768px;
+    @include retina {
+      background-image: url(../images/dots-tab@2x-min.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    background-image: url(../images/dots-dek-min.png);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+    width: 1200px;
+    @include retina {
+      background-image: url(../images/dots-dek@2x-min.png);
+    }
+  }
+}
+
+.hero__container {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    background-image: url(../images/dots-mob-min.png);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: contain;
+    
+    @include retina {
+      background-image: url(../images/dots-mob@2x-min.png);
+    }
+  }
+}
+
+.hero__title {
+  margin-bottom: 32px;
+  width: 247px;
+  font-family: 'Seymour One';
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-text-light;
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+    position: absolute;
+    margin-bottom: 0px;
+    width: 181px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 45px;
+    position: absolute;
+    width: 367px;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $color-text-light;
+  }
+}
+
+.hero__title--fs {
+  @media screen and (min-width: 320px) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 13px;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.hero-box {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    width: 0;
+  }
+}
+
+.hero__list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    margin-top: 28px;
+    left: 650px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    margin-top: 56px;
+    left: 1070px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+}
+.hero__list--item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hero-item__num {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $color-text-dark;
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.04em;
+
+    color: $color-text-dark;
+  }
+}
+
+.hero-item__text {
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 10px;
+    text-align: right;
+    width: 55px;
+    color: $color-text-light;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    width: 100px;
+    text-align: right;
+    color: $color-text-light;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  gap: 8px;
+  @media screen and (min-width: 768px) {
+    padding-top: 129px;
+    padding-bottom: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 217px;
+    padding-bottom: 42px;
+  }
+}
+
+.hero-ice {
+  margin: 0 auto;
+  width: 170px;
+  filter: drop-shadow(5px 5px 40px rgba(252, 252, 252, 0.44));
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: -14px;
+    left: 55%;
+
+    width: 270px;
+    height: 343px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    padding-top: 32px;
+    bottom: -65px;
+    left: 50%;
+
+    width: 484px;
+    height: 590px;
+  }
+}
+
+.hero-pick-box {
+  @media screen and (max-width: 479px) {
+  }
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
+.hero-dig-ice {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    width: 152px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+  }
+}
+
+.hero-box-text {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 66px;
+  }
+}
+
+.hero__text {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 151px;
+    font-size: 12px;
+    line-height: 140%;
+
+    color: $color-text-light;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    width: 220px;
+    height: 80px;
+  }
+}
+.arrow-btn {
+  border: 0;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    height: 15px;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+  }
+}
+.hero__helper-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 33px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 14px;
+  }
+}
+
+.btn-border__link{
+    color: $color-text-dark;
+}
+.btn-transtarent__link{
+    color: $color-icon-yellow ;
+}
+
+
+.btn-transtarent {
+  border: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  color: $color-icon-yellow;
+  text-decoration-line: underline;
+  background-color: transparent;
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 12px 22px;
+  }
+}
+
+.icon-arrow {
+  fill: transparent;
+  stroke: currentColor;
+}
+
+.btn-border {
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 7px 11px;
+  border: 2px solid $color-icon-yellow;
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  @media screen and (min-width: 1200px) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 12px 34px;
+  }
+}
