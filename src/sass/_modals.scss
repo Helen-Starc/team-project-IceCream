@@ -467,11 +467,22 @@
 
 .modal-product-icecream {
   padding: 28px 20px 32px 20px;
+  @include tablet {
+    padding: 32px 40px;
+  }
 }
 .modal-product-title {
   margin: 0 auto;
   margin-bottom: 20px;
   width: 142px;
+
+  @include mobile {
+    width: auto;
+  }
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
 }
 .thumd-icecream {
   position: relative;
@@ -499,6 +510,11 @@
   display: flex;
   justify-content: center;
   gap: 9px;
+
+  @include tablet {
+    margin-bottom: 48px;
+    gap: 20px;
+  }
 }
 .thumd-products-item {
   display: flex;
@@ -510,6 +526,11 @@
   border-radius: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  @include tablet {
+    width: 65px;
+    height: 90px;
+  }
 }
 .products-item-num {
   display: flex;
@@ -524,6 +545,12 @@
   background-color: #9cbe8f;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   border-radius: 50%;
+
+  @include tablet {
+    margin-bottom: 7px;
+    width: 53px;
+    height: 53px;
+  }
 }
 .products-item-text {
   font-weight: 400;
@@ -565,6 +592,15 @@
   margin-bottom: 16px;
   font-size: 12px;
   line-height: 1.4;
+
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 11px 16px;
+    font-size: 14px;
+    width: 368px;
+  }
 }
 .products-fild-input:invalid:not(:placeholder-shown) {
   border-color: red;
@@ -573,6 +609,10 @@
   color: inherit;
   font-size: 12px;
   line-height: 1.4;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
 .products-fild-text {
   resize: none;
@@ -585,9 +625,20 @@
   margin-bottom: 32px;
   font-size: 12px;
   line-height: 1.4;
+
+  @include tablet {
+    display: block;
+    margin: 0 auto 32px;
+    width: 368px;
+    font-size: 14px;
+  }
 }
 .products-fild-text::placeholder {
   color: inherit;
   font-size: 12px;
   line-height: 1.4;
+
+  @include tablet {
+    font-size: 14px;
+  }
 }
