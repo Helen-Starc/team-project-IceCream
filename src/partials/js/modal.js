@@ -59,6 +59,11 @@
     refs.backdropProduct.classList.toggle('is-hidden');
   }
 
+  function toggleModalLocations() {
+    document.body.classList.toggle('modal-open');
+    refs.backdropLocations.classList.toggle('is-hidden');
+  }
+
   function toggleModalAbout() {
     document.body.classList.toggle('modal-open');
     refs.backdropAbout.classList.toggle('is-hidden');
