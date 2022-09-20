@@ -1,20 +1,71 @@
 (() => {
-  //перменные (константы), которые связываны с элементами, на которых есть соответствующие атрибуты
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    backdrop: document.querySelector('[data-backdrop]'),
+    //   hero
+    openModalBtnHero: document.querySelector('[data-modal-open-hero]'),
+    closeModalBtnHero: document.querySelector('[data-modal-close-hero]'),
+    backdropHero: document.querySelector('[data-backdrop-hero]'),
+
+    // products
+    openModalBtnProduct: document.querySelector('[data-modal-open-product]'),
+    closeModalBtnProduct: document.querySelector('[data-modal-close-product]'),
+    backdropProduct: document.querySelector('[data-backdrop-product]'),
+
+    // locations
+    openModalBtnLocations: document.querySelector(
+      '[data-modal-open-locations]'
+    ),
+    closeModalBtnLocations: document.querySelector(
+      '[data-modal-close-locations]'
+    ),
+    backdropLocations: document.querySelector('[data-backdrop-locations]'),
+
+    // about
+    openModalBtnAbout: document.querySelector('[data-modal-open-about]'),
+    closeModalBtnAbout: document.querySelector('[data-modal-close-about]'),
+    backdropAbout: document.querySelector('[data-backdrop-about]'),
+
+    // franchise
+    openModalBtnFranchise: document.querySelector(
+      '[data-modal-open-franchise]'
+    ),
+    closeModalBtnFranchise: document.querySelector(
+      '[data-modal-close-franchise]'
+    ),
+    backdropFranchise: document.querySelector('[data-backdrop-franchise]'),
   };
 
-  //эдвэнтлистэнэр, который при клике активирует функцию "переключения"
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtnHero.addEventListener('click', toggleModalHero);
+  refs.closeModalBtnHero.addEventListener('click', toggleModalHero);
 
-  //функция переключения классов
-  function toggleModal() {
-    //вешает на боди 'modal-open'
+  refs.openModalBtnProduct.addEventListener('click', toggleModalProduct);
+  refs.closeModalBtnProduct.addEventListener('click', toggleModalProduct);
+
+  refs.openModalBtnLocations.addEventListener('click', toggleModalLocations);
+  refs.closeModalBtnLocations.addEventListener('click', toggleModalLocations);
+
+  refs.openModalBtnAbout.addEventListener('click', toggleModalAbout);
+  refs.closeModalBtnAbout.addEventListener('click', toggleModalAbout);
+
+  refs.openModalBtnFranchise.addEventListener('click', toggleModalFranchise);
+  refs.closeModalBtnFranchise.addEventListener('click', toggleModalFranchise);
+
+  function toggleModalHero() {
     document.body.classList.toggle('modal-open');
-    //вешает на бєкдроп 'is-hidden'
-    refs.backdrop.classList.toggle('is-hidden');
+    refs.backdropHero.classList.toggle('is-hidden');
+  }
+
+  function toggleModalProduct() {
+    document.body.classList.toggle('modal-open');
+    refs.backdropProduct.classList.toggle('is-hidden');
+  }
+
+  function toggleModalAbout() {
+    document.body.classList.toggle('modal-open');
+    refs.backdropAbout.classList.toggle('is-hidden');
+  }
+
+  function toggleModalFranchise() {
+    document.body.classList.toggle('modal-open');
+    refs.backdropFranchise.classList.toggle('is-hidden');
   }
 })();
