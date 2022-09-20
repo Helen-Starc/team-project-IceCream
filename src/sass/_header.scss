@@ -7,8 +7,13 @@
 .page-header {
   position: fixed;
   width: 100%;
-  background-color: $color-bg-main;
   z-index: 4;
+  background-color: transparent;
+
+  @media screen and (max-width: 767px) {
+    background-color: rgba(132, 161, 120, 0.9);
+    height: 60px;
+  }
 }
 
 .header__container {
