@@ -1,0 +1,67 @@
+<header class="header">
+  <div class="container header__container">
+    <a class="logo" href="./index.html">
+      <img
+        class="logo__img"
+        srcset="./images/logo@1x.png 1x, ./images/logo@2x.png 2x"
+        src="./images/logo@1x.png"
+        alt="logo ice-cream"
+      />
+    </a>
+    <button
+      type="button"
+      class="btn-menu"
+      aria-controls="header__menu-container"
+      aria-expanded="false"
+      data-menu-button
+    >
+      <svg
+        width="32"
+        height="32"
+        class="header__icon-set"
+        aria-label="Переключатель мобильного меню"
+      >
+        <use
+          class="header__icon-menu"
+          href="./images/icons.svg#icon-burger-menu"
+        ></use>
+        <use
+          class="header__icon-close"
+          href="./images/icons.svg#icon-menu-close"
+        ></use>
+      </svg>
+    </button>
+
+    <button type="button" class="header__btn header__btn--var" data-open-modal>
+      Buy now
+      <svg width="12" height="12" class="header__btn-icon">
+        <use href="./images/icons.svg#icon-btn-arrow"></use>
+      </svg>
+    </button>
+
+    <div class="header__menu-container" id="header__menu-container" data-menu>
+      <nav class="header__nav">
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Home</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">How it’s made?</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Our products</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header__btn header__btn--no-vissually">
+        Buy now
+        <svg width="12" height="12" class="header__btn-icon">
+          <use href="./images/icons.svg#icon-btn-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
