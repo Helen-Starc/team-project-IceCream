@@ -4,7 +4,7 @@
   |============================
 */
 
-.header {
+.page-header {
   position: absolute;
   width: 100%;
 }
@@ -117,9 +117,6 @@
   | navigation
   |============================
 */
-
-.header__nav {
-}
 
 .site-nav {
   @media screen and (max-width: 767px) and (max-width: 1199px) {
