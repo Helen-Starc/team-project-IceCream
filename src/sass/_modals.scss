@@ -221,7 +221,8 @@
     background-image: url(../images/modals/modal-hero-img1@2x.png);
   }
 }
-.check-ice-cream:checked .icecream-text {
+.check-ice-cream:checked ~ .icecream-label {
+  border-radius: 16px;
   background: linear-gradient(
       0deg,
       rgba(156, 190, 143, 0.7),
@@ -260,7 +261,8 @@
     background-image: url(../images/modals/modal-hero-img2@2x.png);
   }
 }
-.check-ice-coffee:checked .icecoffee-text {
+.check-ice-coffee:checked ~ .icecoffee-label {
+  border-radius: 16px;
   background: linear-gradient(
       0deg,
       rgba(248, 210, 78, 0.7),
@@ -299,7 +301,8 @@
     background-image: url(../images/modals/modal-hero-img3@2x.png);
   }
 }
-.check-milkshake:checked .milkshake-text {
+.check-milkshake:checked ~ .milkshake-label {
+  border-radius: 16px;
   background: linear-gradient(
       0deg,
       rgba(213, 117, 63, 0.7),
