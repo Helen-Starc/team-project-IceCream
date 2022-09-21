@@ -190,18 +190,31 @@
 }
 
 .contacts__btn--locations {
-  transition: background-color $transition-duration $transition-function,
-    border-color $transition-duration $transition-function;
+  transition: color $animation, background-color $animation,
+    transform $animation, border-color $animation;
 
   &:hover,
   &:focus {
-    background-color: $color-btn-hover-focus;
     border-color: $color-btn-hover-focus;
-  }
+    background-color: $color-btn-hover-focus;
 
+    transform: scale(1.1) translateX(-5px);
+  }
   &:focus {
     color: $color-text-light;
   }
+  // transition: background-color $transition-duration $transition-function,
+  //   border-color $transition-duration $transition-function;
+
+  // &:hover,
+  // &:focus {
+  //   background-color: $color-btn-hover-focus;
+  //   border-color: $color-btn-hover-focus;
+  // }
+
+  // &:focus {
+  //   color: $color-text-light;
+  // }
 
   &:disabled {
     background-color: $color-btn-disabled;
@@ -212,17 +225,29 @@
   stroke: currentColor;
 }
 .contacts__btn--franchise {
-  transition: border-color $transition-duration $transition-function,
-    color $transition-duration $transition-function;
+  transition: color $animation, transform $animation,
+    border-color $transition-duration;
 
   &:hover,
   &:focus {
-    border-color: $color-btn-hover-focus;
+    transform: scale(1.1) translateX(5px);
   }
-
   &:focus {
+    border-color: $color-btn-hover-focus;
     color: $color-text-light;
   }
+
+  // transition: border-color $transition-duration $transition-function,
+  //   color $transition-duration $transition-function;
+
+  // &:hover,
+  // &:focus {
+  //   border-color: $color-btn-hover-focus;
+  // }
+
+  // &:focus {
+  //   color: $color-text-light;
+  // }
 
   &:disabled {
     border-color: $color-btn-disabled;

@@ -33,12 +33,6 @@
   align-items: center;
   justify-content: center;
 
-  &::before {
-    &:hover {
-      transform: rotateX(360deg);
-    }
-  }
-
   @include tablet {
     width: calc((100% - 160px) / 3);
   }
