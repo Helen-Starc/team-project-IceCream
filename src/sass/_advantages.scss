@@ -33,6 +33,12 @@
   align-items: center;
   justify-content: center;
 
+  &::before {
+    &:hover {
+      transform: rotateX(360deg);
+    }
+  }
+
   @include tablet {
     width: calc((100% - 160px) / 3);
   }
@@ -85,6 +91,7 @@
 .advantage__item:first-child::before {
   position: relative;
   margin-bottom: 16px;
+
   @include tablet {
     margin-bottom: 32px;
   }
