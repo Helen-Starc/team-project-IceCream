@@ -8,6 +8,9 @@
   width: 100%;
   z-index: 4;
   background-color: transparent;
+  &.fixed {
+    position: fixed;
+  }
 }
 
 .header__container {
@@ -42,7 +45,6 @@
   transition: transform 500ms $transition-duration;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 61px;
     &.indent {
       transform: translate(10px);
     }
@@ -94,6 +96,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 
     transition: transform 300ms $transition-function,
       background-color 300ms $transition-function,
