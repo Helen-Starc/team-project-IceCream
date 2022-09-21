@@ -98,7 +98,7 @@
   letter-spacing: 0.04em;
   color: $color-text-orange;
 
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 
@@ -278,8 +278,17 @@
   line-height: 18px;
 
   color: $color-text-dark;
+  @media screen and (max-width: 767px) {
+    padding: 12px 34px;
+  }
   @media screen and (min-width: 768px) {
     margin: 0;
+  }
+
+  &:hover {
+    background-color: $color-btn-hover-focus;
+    transform: scale(1.1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
