@@ -407,17 +407,30 @@
   font-size: 12px;
   line-height: 1.25;
 
-  transition-property: color, background-color;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-function;
+  transition: color $animation, background-color $animation,
+    box-shadow $animation, transform $animation;
 
-  &:hover {
-    background-color: $color-btn-hover-focus;
-  }
+  &:hover,
   &:focus {
     background-color: $color-btn-hover-focus;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+  }
+  &:focus {
     color: $color-text-light;
   }
+
+  // transition-property: color, background-color;
+  // transition-duration: $transition-duration;
+  // transition-timing-function: $transition-function;
+
+  // &:hover {
+  //   background-color: $color-btn-hover-focus;
+  // }
+  // &:focus {
+  //   background-color: $color-btn-hover-focus;
+  //   color: $color-text-light;
+  // }
   &:disabled {
     background-color: $color-link-disabled;
   }
