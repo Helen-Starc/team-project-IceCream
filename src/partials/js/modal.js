@@ -19,11 +19,6 @@
     ),
     backdropLocations: document.querySelector('[data-backdrop-locations]'),
 
-    // about
-    openModalBtnAbout: document.querySelector('[data-modal-open-about]'),
-    closeModalBtnAbout: document.querySelector('[data-modal-close-about]'),
-    backdropAbout: document.querySelector('[data-backdrop-about]'),
-
     // franchise
     openModalBtnFranchise: document.querySelector(
       '[data-modal-open-franchise]'
@@ -32,6 +27,11 @@
       '[data-modal-close-franchise]'
     ),
     backdropFranchise: document.querySelector('[data-backdrop-franchise]'),
+
+    // about
+    openModalBtnAbout: document.querySelector('[data-modal-open-about]'),
+    closeModalBtnAbout: document.querySelector('[data-modal-close-about]'),
+    backdropAbout: document.querySelector('[data-backdrop-about]'),
   };
 
   refs.openModalBtnHero.addEventListener('click', toggleModalHero);
@@ -43,11 +43,11 @@
   refs.openModalBtnLocations.addEventListener('click', toggleModalLocations);
   refs.closeModalBtnLocations.addEventListener('click', toggleModalLocations);
 
-  refs.openModalBtnAbout.addEventListener('click', toggleModalAbout);
-  refs.closeModalBtnAbout.addEventListener('click', toggleModalAbout);
-
   refs.openModalBtnFranchise.addEventListener('click', toggleModalFranchise);
   refs.closeModalBtnFranchise.addEventListener('click', toggleModalFranchise);
+
+  refs.openModalBtnAbout.addEventListener('click', toggleModalAbout);
+  refs.closeModalBtnAbout.addEventListener('click', toggleModalAbout);
 
   function toggleModalHero() {
     document.body.classList.toggle('modal-open');
@@ -64,13 +64,13 @@
     refs.backdropLocations.classList.toggle('is-hidden');
   }
 
-  function toggleModalAbout() {
-    document.body.classList.toggle('modal-open');
-    refs.backdropAbout.classList.toggle('is-hidden');
-  }
-
   function toggleModalFranchise() {
     document.body.classList.toggle('modal-open');
     refs.backdropFranchise.classList.toggle('is-hidden');
+  }
+
+  function toggleModalAbout() {
+    document.body.classList.toggle('modal-open');
+    refs.backdropAbout.classList.toggle('is-hidden');
   }
 })();
