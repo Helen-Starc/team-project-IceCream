@@ -1,0 +1,644 @@
+// BACKDROP
+
+.backdrop {
+  position: fixed;
+
+  padding-top: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity 500ms ease, visibility 500ms ease;
+  &--is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  &--is-hidden .modal {
+    transform: translate(-50%, -50%);
+  }
+}
+
+// MODAL-HERO
+
+.modal {
+  position: relative;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  padding: 28px;
+  width: 100%;
+  background-color: $color-text-light;
+  border-radius: 10px;
+  border: 2px solid $color-accent;
+
+  transition: transform 500ms ease 150ms;
+
+  @include mobile {
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @include tablet {
+    width: 568px;
+    padding: 32px 60px;
+  }
+}
+.modal-hero {
+  @include tablet {
+    width: 568px;
+    padding: 32px 54px;
+  }
+}
+.modal-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-text-dark;
+  text-align: center;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+.modal-hero-title {
+  margin-bottom: 84px;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-text-dark;
+  text-align: center;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 104px;
+  }
+}
+.modal-btn-close {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  top: 8px;
+  right: 8px;
+
+  @include tablet {
+    top: 20px;
+    right: 20px;
+  }
+
+  transition-property: fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
+  &:hover,
+  &:focus {
+    fill: $color-btn-hover-focus;
+  }
+}
+.form-hero-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 84px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+}
+.form-hero-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 16px;
+}
+.item-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  width: 132px;
+  height: 136px;
+  border: 2px solid $color-bg-light-green;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.icecream-bg-clr {
+  position: absolute;
+  top: -58px;
+  left: 0;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+.icecream-bg-clr::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 132px;
+  height: 132px;
+  background-image: url(../images/modals/modal-hero-img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include retina {
+    background-image: url(../images/modals/modal-hero-img1@2x.png);
+  }
+}
+.check-ice-cream:checked .icecream-text {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+}
+.icecoffee-text {
+  border: 2px solid $color-bg-light-yellow;
+}
+.icecoffee-bg-clr {
+  position: absolute;
+  top: -58px;
+  left: 0;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+.icecoffee-bg-clr::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 132px;
+  height: 132px;
+  background-image: url(../images/modals/modal-hero-img2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include retina {
+    background-image: url(../images/modals/modal-hero-img2@2x.png);
+  }
+}
+.check-ice-coffee:checked .icecoffee-text {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+}
+.milkshake-text {
+  border: 2px solid $color-bg-light-orange;
+}
+.milkshake-bg-clr {
+  position: absolute;
+  top: -58px;
+  left: 0;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+.milkshake-bg-clr::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 132px;
+  height: 132px;
+  background-image: url(../images/modals/modal-hero-img3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include retina {
+    background-image: url(../images/modals/modal-hero-img3@2x.png);
+  }
+}
+.check-milkshake:checked .milkshake-text {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7),
+      rgba(213, 117, 63, 0.7)
+    ),
+    #d9d9d9;
+}
+
+.form-hero-fild {
+  display: block;
+  color: inherit;
+}
+.fild-input {
+  background-color: rgba(248, 210, 78, 0.1);
+  padding: 8px 12px 7px 12px;
+  width: 100%;
+  border: 1px solid $color-bg-main;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    font-size: 14px;
+    padding: 11px 16px;
+    width: 368px;
+  }
+}
+.fild-input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+.fild-input::placeholder {
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+.fild-text {
+  resize: none;
+  background-color: rgba(248, 210, 78, 0.1);
+  padding: 8px 12px 7px 12px;
+  width: 100%;
+  height: 65px;
+  border: 1px solid $color-bg-main;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    font-size: 14px;
+    padding: 11px 16px;
+    width: 368px;
+    height: 84px;
+  }
+}
+.fild-text::placeholder {
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+.form-hero-submit {
+  margin: 0 auto;
+  padding: 12px 34px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+
+  transition-property: color, background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
+
+  &:hover {
+    background-color: $color-btn-hover-focus;
+  }
+  &:focus {
+    color: $color-text-light;
+  }
+  &:disabled {
+    background-color: $color-link-disabled;
+  }
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.22;
+  }
+}
+
+// MODAL ABOUT
+
+.modal-title-about {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+.video {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+.video-item {
+  width: 100%;
+  height: 199px;
+  border: none;
+
+  @include tablet {
+    height: 205px;
+  }
+}
+.modal-about-text {
+  font-size: 14px;
+  line-height: 1.4;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+// MODAL LOCACIONS
+
+.modal-locations-title {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+.modals-thumb {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border-radius: 10px;
+
+  @include tablet {
+    margin-bottom: 32px;
+  }
+}
+.locations-img {
+  margin: 0 auto;
+}
+.modal-locations-link {
+  display: block;
+  margin: 0 auto;
+  padding-top: 12px;
+  width: 134px;
+  height: 42px;
+  background-color: $color-btn-active;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: inherit;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+
+  transition-property: color, background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-function;
+
+  &:hover {
+    background-color: $color-btn-hover-focus;
+  }
+  &:focus {
+    color: $color-text-light;
+  }
+  &:disabled {
+    background-color: $color-link-disabled;
+  }
+}
+
+// MODAL FRANCHISE
+
+.modal-franchise-title {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin: 0 auto;
+    width: 322px;
+    margin-bottom: 24px;
+  }
+}
+.modal-franchse-text {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+
+  @include tablet {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+}
+
+// MODAL PRODUCTS ICECRAEM
+
+.modal-product-icecream {
+  padding: 28px 20px 32px 20px;
+  @include tablet {
+    padding: 32px 40px;
+  }
+}
+.modal-product-title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 142px;
+
+  @include mobile {
+    width: auto;
+  }
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+.thumd-icecream {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 131px;
+  height: 131px;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.icecream-img {
+  position: absolute;
+  top: -7px;
+  width: 100%;
+}
+.modal-products-list {
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+
+  @include tablet {
+    margin-bottom: 48px;
+    gap: 20px;
+  }
+}
+.thumd-products-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include tablet {
+    width: 65px;
+    height: 90px;
+  }
+}
+.products-item-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 43px;
+  height: 43px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 2.8;
+  background-color: #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+
+  @include tablet {
+    margin-bottom: 7px;
+    width: 53px;
+    height: 53px;
+  }
+}
+.products-item-text {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+}
+.modal-products-pretitle {
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.products-ingred-list {
+  margin-bottom: 48px;
+}
+.products-ingred-item {
+  display: flex;
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+.products-ingred-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.76;
+}
+.form-products-fild {
+  display: block;
+  color: inherit;
+}
+.products-fild-input {
+  background-color: rgba(248, 210, 78, 0.1);
+  padding: 11px;
+  width: 100%;
+  border: 1px solid $color-bg-main;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include tablet {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 11px 16px;
+    font-size: 14px;
+    width: 368px;
+  }
+}
+.products-fild-input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+.products-fild-input::placeholder {
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
+.products-fild-text {
+  resize: none;
+  background-color: rgba(248, 210, 78, 0.1);
+  padding: 11px;
+  width: 100%;
+  height: 84px;
+  border: 1px solid $color-bg-main;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include tablet {
+    display: block;
+    margin: 0 auto 32px;
+    width: 368px;
+    font-size: 14px;
+  }
+}
+.products-fild-text::placeholder {
+  color: inherit;
+  font-size: 12px;
+  line-height: 1.4;
+
+  @include tablet {
+    font-size: 14px;
+  }
+}
