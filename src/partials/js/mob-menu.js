@@ -3,6 +3,7 @@
   const mobileMenuRef = document.querySelector('[data-menu]');
   const logoindent = document.querySelector('[data-logo]');
   const fixed = document.querySelector('[data-header]');
+  const body = document.querySelector('body');
 
   menuBtnRef.addEventListener('click', () => {
     const expanded =
@@ -14,12 +15,6 @@
     fixed.classList.toggle('fixed');
 
     mobileMenuRef.classList.toggle('is-open');
+    body.classList.toggle('menu-open');
   });
-
-  refs.menuBtnRef.addEventListener('click', toggleModalHero);
-
-  function toggleModalHero() {
-    document.body.classList.toggle('menu-open');
-    refs.mobileMenuRef.classList.toggle('is-hidden');
-  }
 })();
