@@ -5,15 +5,9 @@
 */
 
 .page-header {
-  position: fixed;
   width: 100%;
   z-index: 4;
   background-color: transparent;
-
-  @media screen and (max-width: 767px) {
-    background-color: rgba(132, 161, 120, 0.9);
-    height: 60px;
-  }
 }
 
 .header__container {
@@ -89,13 +83,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     z-index: 5;
     background-color: $color-bg-menu-green;
     text-align: center;
     opacity: 0;
-
+    visibility: visible;
     transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     transition: transform 300ms $transition-function,
       background-color 300ms $transition-function,
@@ -129,6 +127,11 @@
   | navigation
   |============================
 */
+
+.header__nav {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .site-nav {
   @media screen and (max-width: 767px) and (max-width: 1199px) {
