@@ -20,8 +20,15 @@
         </div>
         <div class="hero__helper-box">
             <picture>
-                <source srcset="./images/big-ice-dek.png 1x" media="(min-width:1200px)">
-                <img class="hero-dig-ice" src="./images/big-ice.png" alt="123123" width="255">
+                <source srcset="
+                ./images/dig-ice-dek-min.png 1x, 
+                ./images/dig-ice-dek@2x-min.png 2x"
+                    media="(min-width:1200px)">
+                <source srcset="
+                ./images/dig-ice-tab-min.png 1x, 
+                ./images/dig-ice-tab@2x-min.png 2x"
+                media="(min-width:768px)">
+                <img class="hero-dig-ice" src="./images/dig-ice-dek-min.png" alt="123123" width="255">
             </picture>
             <div class="hero-box-text">
                 <p class="hero__text">

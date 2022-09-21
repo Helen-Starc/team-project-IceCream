@@ -1,0 +1,111 @@
+.rews-pick-box {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 80px;
+
+  width: 280px;
+  height: 130px;
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 163px;
+    margin: 0 auto;
+  }
+   @media screen and (min-width: 1200px) {
+    width: 1014px;
+    height: 163px;
+  }
+}
+
+.cust-rews__unsplashk {
+  position: absolute;
+  top: -23px;
+  margin: 0 auto;
+  width: 280px;
+  border-radius: 7.5px;
+   @media screen and (min-width: 768px) {
+    border-radius: 18px;
+    width: 704px;
+    height: 327px;
+    top: -164px;
+  }
+   @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+    width: 1013px;
+    height: 422px;
+    top: -94px;
+  }
+}
+.cust-rews {
+  background-image: url(../images/bgc-ice-4-min.jpg);
+}
+
+.cust-rews__girl {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  margin-top: 60px;
+  width: 85px;
+  border-radius: 50%;
+  @media screen and (min-width:1200px) {
+    margin-top: 293px;
+  }
+}
+.cust__text {
+  padding: 34px 39px;
+  font-size: 12px;
+  line-height: 255%;
+  /* or 31px */
+
+  text-align: center;
+
+  color: $color-text-light;
+  @media screen and (min-width: 768px) {
+    padding: 29px 80px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+}
+.cust-box {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 280px;
+  background-color: $color-bg-main;
+  border-radius: 10px;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+}
+.cust_place {
+  margin: 0 auto;
+  padding-bottom: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  /* identical to box height, or 37px */
+
+  text-align: center;
+
+  color: $color-text-dark;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+.dots {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 405px;
+  gap: 18px;
+  width: 102px;
+  height: 12px;
+  @media screen and (min-width:1200px) {
+    padding-bottom: 207px;
+  }
+}
+.sing-dot {
+    border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $main-dots-disabled;
+}
