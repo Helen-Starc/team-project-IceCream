@@ -109,6 +109,8 @@
   padding-bottom: 50px;
   text-align: center;
 
+  transition: box-shadow 350ms $transition-function;
+
   @include mobile {
     width: 440px;
   }
@@ -126,6 +128,10 @@
     padding-top: 165px;
     padding-left: 65px;
     padding-right: 65px;
+
+    &:hover {
+      box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
@@ -321,19 +327,17 @@
 
   transform: translateX(-50%);
 
+  transition: transform $transition-duration $transition-function;
+
+  &:hover {
+    transform: translateX(-50%) scaleX(1.2);
+  }
+
+  &:focus {
+    transform: translateX(-50%) scale(1.1);
+  }
+
   @include desctop {
     bottom: 60px;
   }
-}
-
-.products__arrow {
-  transition: transform $transition-duration $transition-function;
-}
-
-.products__arrow:hover {
-  transform: scaleX(1.2);
-}
-
-.products__btn:focus {
-  transform: translateX(-50%) scale(1.2);
 }

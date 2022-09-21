@@ -5,16 +5,20 @@
 */
 
 .page-header {
-  position: absolute;
   width: 100%;
+  z-index: 4;
+  background-color: transparent;
+  &.fixed {
+    position: fixed;
+  }
 }
 
 .header__container {
   display: flex;
+  align-items: center;
 
   @media screen and (max-width: 767px) {
     justify-content: space-between;
-    align-items: baseline;
     padding-top: 12px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -22,7 +26,6 @@
     justify-content: flex-end;
   }
   @media screen and (min-width: 1200px) {
-    align-items: center;
     padding-top: 13px;
     justify-content: space-between;
   }
@@ -38,8 +41,12 @@
   display: inline-block;
   z-index: 10;
 
+  transition: transform 500ms $transition-duration;
+
   @media screen and (max-width: 767px) {
-    margin-bottom: 61px;
+    &.indent {
+      transform: translate(10px);
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: auto;
@@ -77,13 +84,18 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     z-index: 5;
     background-color: $color-bg-menu-green;
     text-align: center;
     opacity: 0;
-
+    visibility: visible;
     transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
 
     transition: transform 300ms $transition-function,
       background-color 300ms $transition-function,
@@ -117,6 +129,11 @@
   | navigation
   |============================
 */
+
+.header__nav {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .site-nav {
   @media screen and (max-width: 767px) and (max-width: 1199px) {
@@ -210,7 +227,7 @@
     }
   }
 
-  &--var {
+  &--desktop {
     @media screen and (max-width: 767px) {
       display: none;
     }
@@ -222,7 +239,7 @@
     }
   }
 
-  &--no-vissually {
+  &--mobail {
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -252,7 +269,12 @@
 .btn-menu {
   border: none;
   z-index: 10;
-  height: 50px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 
   background-color: transparent;
 
