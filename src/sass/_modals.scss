@@ -54,9 +54,6 @@
     width: 450px;
     top: 0;
     margin: 0 auto;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
   }
   @include tablet {
     margin: 0;
@@ -65,6 +62,39 @@
     transform: translate(-50%, -50%);
     width: 568px;
     padding: 32px 60px;
+  }
+}
+.modal-product-icecream {
+  top: 0%;
+  @include mobile {
+    top: 0%;
+  }
+  @include tablet {
+    transform: translate(-50%);
+  }
+}
+.modal-locations {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mobile {
+    margin: 0;
+  }
+}
+.modal-franchise {
+  @include mobile {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.modal-about {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include mobile {
+    margin: 0;
   }
 }
 .modal-hero {
