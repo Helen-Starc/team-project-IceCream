@@ -85,6 +85,7 @@
 .advantage__item:first-child::before {
   position: relative;
   margin-bottom: 16px;
+
   @include tablet {
     margin-bottom: 32px;
   }

@@ -312,15 +312,26 @@
   text-decoration-line: underline;
   background-color: transparent;
 
-  transition: color $transition-duration $transition-function;
+  transition: color $animation, transform $animation;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-link-hover;
+    transform: scale(1.1);
   }
-
   &:focus {
     color: $color-link-focus;
   }
+
+  // transition: color $transition-duration $transition-function;
+
+  // &:hover {
+  //   color: $color-link-hover;
+  // }
+
+  // &:focus {
+  //   color: $color-link-focus;
+  // }
 
   &:disabled {
     color: $color-link-disabled;
@@ -353,17 +364,29 @@
   font-size: 8px;
   line-height: 10px;
 
-  transition: color $transition-duration $transition-function,
-    border-color $transition-duration $transition-function;
+  transition: color $animation, transform $animation,
+    border-color $transition-duration;
 
-  &:hover {
-    border-color: $color-btn-hover-focus;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
   }
-
   &:focus {
     border-color: $color-btn-hover-focus;
     color: $color-text-light;
   }
+
+  // transition: color $transition-duration $transition-function,
+  //   border-color $transition-duration $transition-function;
+
+  // &:hover {
+  //   border-color: $color-btn-hover-focus;
+  // }
+
+  // &:focus {
+  //   border-color: $color-btn-hover-focus;
+  //   color: $color-text-light;
+  // }
 
   &:disabled {
     border-color: $color-btn-disabled;

@@ -1,246 +1,245 @@
-.section_about{
-    position: relative;
+.section_about {
+  position: relative;
+  align-items: center;
+}
+.about_name {
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-text-light;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    width: 276px;
+    font-size: 22px;
+    line-height: 1.23;
+  }
+}
+.about_general {
+  font-family: 'Seymour One';
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-text-light;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  margin-top: 12px;
+  width: 210px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    width: 454px;
+    font-size: 34px;
+    line-height: 1.26;
+  }
+}
+.about_content {
+  display: block;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+  @include desctop {
+    margin-top: 82px;
     align-items: center;
-    
+  }
 }
-.about_name{
-    text-transform: uppercase;
+.about_content__picture {
+  position: relative;
+  width: 279px;
+  height: 300px;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+
+  @include tablet {
+    width: 336px;
+    height: 355px;
+    margin-right: 32px;
+    margin-left: auto;
+  }
+
+  @include desctop {
+    width: 500px;
+    height: 529px;
+    margin-right: 100px;
+  }
+}
+.about_circle {
+  position: absolute;
+  top: 0;
+  width: 278px;
+  height: 278px;
+  border-radius: 50%;
+  background-color: $color-accent;
+  background: linear-gradient(
+    0deg,
+    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)
+  );
+
+  // linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+  //     #D9D9D9;
+
+  @include tablet {
+    width: 334px;
+    height: 330px;
+  }
+
+  @include desctop {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.about_imege {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+
+  @include tablet {
+    width: 334px;
+    height: 330px;
+  }
+
+  @include desctop {
+    width: 490px;
+    height: 490px;
+  }
+}
+
+.about_content__general {
+  @include tablet {
+    width: 334px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  @include desctop {
+    margin-right: auto;
+  }
+}
+.about_content__text {
+  display: block;
+  width: 220px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 400;
+  // font-family: 'Montserrat';
+  color: $color-text-light;
+
+  @media screen and (max-width: 767px) {
     text-align: center;
-    color: $color-text-light;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
-    margin-top: 60px;
-    margin-right: auto;
-    margin-left: auto;
+  }
 
-    @include tablet{
-        width: 276px;
-        font-size: 22px;
-        line-height: 1.23;
+  @include tablet {
+    width: 334px;
+  }
 
-    }
-    
-}
-.about_general{
-    font-family: 'Seymour One';
-    text-transform: uppercase;
-    text-align: center;
-    color: $color-text-light;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.27;
-    margin-top: 12px; 
-    width: 210px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @include tablet {
-        width: 454px;
-        font-size: 34px;
-        line-height: 1.26;
-    }
-}
-.about_content{
-    display: block;
-
-    @include tablet {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 72px;  
-    }
-    @include desctop{
-        margin-top: 82px;
-        align-items: center;
-    }
-    
-    
-}
-.about_content__picture{
-    position: relative;
-    width: 279px;
-    height: 300px;
-    margin-top: 32px;
-    margin-right: auto;
-    margin-left: auto;
-    border: none;
-
-    @include tablet {
-        width: 336px;
-        height: 355px;
-        margin-right: 32px;
-        margin-left: auto;
-        }
-
-    @include desctop{
-        width: 500px;
-        height: 529px;
-        margin-right: 100px;
-    }    
-
-}
-.about_circle{
-    position: absolute;
-    top: 0;
-    width: 278px;
-    height: 278px;
-    border-radius: 50%;
-    background-color: $color-accent;
-    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), 
-    rgba(248, 210, 78, 0.7));
-
-
-    @include tablet {
-        width: 334px;
-        height: 330px;
-    }
-
-    @include desctop{
-        width: 500px;
-        height: 500px;
-    }
-
-}
-
-.about_imege{
-    width: 280px;
-    height: 280px;
-    position: absolute;
-    bottom: 0;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-
-    @include tablet {
-        width: 334px;
-        height: 330px;
-    }
-
-    @include desctop{
-        width: 490px;
-        height: 490px;
-    }
-}
-
-.about_content__general{
-    @include tablet {
-        width: 334px;
-        margin-left: 0;
-        margin-right: auto;
-    }
-
-
-    @include desctop {
-        margin-right: auto;
-
-    }
-
-}
-.about_content__text{
-
-    display: block;
-    width: 220px;
-    margin-top: 40px;
-    margin-right: auto;
-    margin-left: auto;
-    font-weight: 400;
-    // font-family: 'Montserrat';
-    color: $color-text-light;
-
-    @media screen and (max-width:767px){
-       text-align: center; 
-    }
-
-
-    @include tablet {
-        width: 334px;
-    }
-
-    @include desctop{
-        width: 463px;
-    }
-
-
+  @include desctop {
+    width: 463px;
+  }
 }
 .text_about__one {
+  font-size: 12px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  margin-top: 8px;
 
-    font-size: 12px;
+  @include desctop {
+    font-size: 16px;
+  }
+}
+.text_about__two {
+  font-size: 12px;
+  line-height: 1.62;
+  letter-spacing: 0.04em;
+  margin-top: 4px;
+
+  @include tablet {
     line-height: 1.76;
-    letter-spacing: 0.04em;
-    margin-top: 8px;
-   
-    @include desctop{
-        font-size: 16px;
-        
-    }
-}
-.text_about__two{
-    font-size: 12px;
-    line-height: 1.62;
-    letter-spacing: 0.04em;
-    margin-top: 4px;
-    
-    @include tablet{
-        line-height: 1.76; 
-    }
+  }
 
-    @include desctop{
-        font-size: 14px;
-    }
-}
-
-.text_about__three{
-    display: none;
-    @include tablet {
-        display: block;
-        font-size: 12px;
-        line-height: 1.94;
-        margin-top: 4px;
-    }
-
-    @include desctop{
-        font-size: 14px;
-    }
-}
-.about_button{
-    
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 164px;
-    height: 42px;
-    background-color: $color-btn-active;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
+  @include desctop {
     font-size: 14px;
-    line-height: 1.29;
-    align-items: center;
-    text-align: center;
-    color: $color-text-dark;
-    transition: color $animation, background-color $animation;
+  }
+}
 
-    &:hover,
-    &:focus{
-        background-color: $color-link-hover;
-    }
-    &:focus{
-        color: $color-text-light;
-    }
-    &:disabled{
-        background-color: $color-btn-disabled;
-    }
-    @include tablet {
-        margin-top: 48px;
-        margin-left: 0;
-    
-    }
+.text_about__three {
+  display: none;
+  @include tablet {
+    display: block;
+    font-size: 12px;
+    line-height: 1.94;
+    margin-top: 4px;
+  }
+
+  @include desctop {
+    font-size: 14px;
+  }
+}
+.about_button {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 164px;
+  height: 42px;
+  background-color: $color-btn-active;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  text-align: center;
+  color: $color-text-dark;
+
+  transition: color $animation, background-color $animation,
+    box-shadow $animation, transform $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-hover-focus;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+  }
+  &:focus {
+    color: $color-text-light;
+  }
+
+  // &:hover,
+  // &:focus{
+  //     background-color: $color-link-hover;
+  // }
+  // &:focus{
+  //     color: $color-text-light;
+  // }
+  &:disabled {
+    background-color: $color-btn-disabled;
+  }
+  @include tablet {
+    margin-top: 48px;
+    margin-left: 0;
+  }
 }
 .read-more-icon {
-    fill: transparent;
-    stroke: currentColor;
-    margin-left: 5px;
-    padding-top: 5px;
+  fill: transparent;
+  stroke: currentColor;
+  margin-left: 5px;
+  padding-top: 5px;
 }
