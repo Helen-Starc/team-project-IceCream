@@ -109,8 +109,7 @@
   padding-bottom: 50px;
   text-align: center;
 
-  transition: transform $transition-duration $transition-function,
-    box-shadow $transition-duration $transition-function;
+  transition: box-shadow 350ms $transition-function;
 
   @include mobile {
     width: 440px;
@@ -131,7 +130,6 @@
     padding-right: 65px;
 
     &:hover {
-      transform: scaley(1.01);
       box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3);
     }
   }
@@ -329,19 +327,17 @@
 
   transform: translateX(-50%);
 
+  transition: transform $transition-duration $transition-function;
+
+  &:hover {
+    transform: translateX(-50%) scaleX(1.2);
+  }
+
+  &:focus {
+    transform: translateX(-50%) scale(1.1);
+  }
+
   @include desctop {
     bottom: 60px;
   }
-}
-
-.products__arrow {
-  transition: transform $transition-duration $transition-function;
-}
-
-.products__arrow:hover {
-  transform: scaleX(1.2);
-}
-
-.products__btn:focus {
-  transform: translateX(-50%) scale(1.2);
 }

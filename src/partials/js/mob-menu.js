@@ -15,10 +15,11 @@
 
     mobileMenuRef.classList.toggle('is-open');
   });
+
   refs.menuBtnRef.addEventListener('click', toggleModalHero);
 
   function toggleModalHero() {
-    document.body.classList.toggle('modal-open');
+    document.body.classList.toggle('menu-open');
     refs.mobileMenuRef.classList.toggle('is-hidden');
   }
 })();

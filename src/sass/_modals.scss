@@ -17,11 +17,8 @@
   z-index: 6;
   backdrop-filter: blur(2px);
   background-color: rgba(0, 0, 0, 0.3);
-  transition: opacity 500ms ease, visibility 500ms ease;
-
-  // &--is-hidden .modal {
-  //   transform: translate(-50%, -50%);
-  // }
+  transition: opacity 500ms $transition-function,
+    visibility 500ms $transition-function;
 }
 
 .is-hidden {

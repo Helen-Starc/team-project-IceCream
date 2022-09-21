@@ -41,7 +41,7 @@
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: contain;
-    
+
     @include retina {
       background-image: url(../images/dots-mob@2x-min.png);
     }
@@ -256,11 +256,23 @@
 }
 .arrow-btn {
   border: 0;
+
+  transition: transform $transition-duration $transition-function;
+
+  &:hover {
+    transform: scaleX(1.2);
+  }
+
+  &:focus {
+    transform: scale(1.1);
+  }
+
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
-    height: 15px;
+    // height: 15px;
     background-color: transparent;
     margin-top: 20px;
   }
@@ -269,6 +281,7 @@
     margin-top: 32px;
   }
 }
+
 .hero__helper-box {
   @media screen and (min-width: 768px) {
     display: flex;
@@ -279,13 +292,13 @@
   }
 }
 
-.btn-border__link{
-    color: $color-text-dark;
-}
-.btn-transtarent__link{
-    color: $color-icon-yellow ;
+.btn-border__link {
+  color: $color-text-dark;
 }
 
+.btn-transtarent__link {
+  color: $color-icon-yellow;
+}
 
 .btn-transtarent {
   border: 0;
@@ -295,9 +308,24 @@
   font-weight: 600;
   font-size: 8px;
   line-height: 10px;
-  color: $color-icon-yellow;
+  color: $color-link-default;
   text-decoration-line: underline;
   background-color: transparent;
+
+  transition: color $transition-duration $transition-function;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:focus {
+    color: $color-link-focus;
+  }
+
+  &:disabled {
+    color: $color-link-disabled;
+  }
+
   @media screen and (min-width: 1200px) {
     font-weight: 600;
     font-size: 14px;
@@ -324,6 +352,23 @@
   font-weight: 600;
   font-size: 8px;
   line-height: 10px;
+
+  transition: color $transition-duration $transition-function,
+    border-color $transition-duration $transition-function;
+
+  &:hover {
+    border-color: $color-btn-hover-focus;
+  }
+
+  &:focus {
+    border-color: $color-btn-hover-focus;
+    color: $color-text-light;
+  }
+
+  &:disabled {
+    border-color: $color-btn-disabled;
+  }
+
   @media screen and (min-width: 1200px) {
     font-weight: 600;
     font-size: 14px;
