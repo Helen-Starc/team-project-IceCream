@@ -8,7 +8,11 @@
   @media screen and (min-width: 768px) {
     width: 704px;
     height: 163px;
-    margin: 0;
+    margin: 0 auto;
+  }
+   @media screen and (min-width: 1200px) {
+    width: 1014px;
+    height: 163px;
   }
 }
 
@@ -31,20 +35,6 @@
     top: -94px;
   }
 }
-.dots {
-  display: flex;
-  margin: 0 auto;
-  padding-bottom: 395px;
-  gap: 18px;
-  width: 102px;
-  height: 12px;
-}
-.sing-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: $color-dots-disabled;
-}
 .cust-rews {
   background-image: url(../images/bgc-ice-4-min.jpg);
 }
@@ -55,6 +45,9 @@
   margin-top: 60px;
   width: 85px;
   border-radius: 50%;
+  @media screen and (min-width:1200px) {
+    margin-top: 293px;
+  }
 }
 .cust__text {
   padding: 34px 39px;
@@ -97,4 +90,22 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
   }
+}
+.dots {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 405px;
+  gap: 18px;
+  width: 102px;
+  height: 12px;
+  @media screen and (min-width:1200px) {
+    padding-bottom: 207px;
+  }
+}
+.sing-dot {
+    border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $main-dots-disabled;
 }
