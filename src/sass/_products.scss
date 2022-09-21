@@ -109,10 +109,8 @@
   padding-bottom: 50px;
   text-align: center;
 
-  &:hover {
-    transform: scaley(1.01);
-    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3);
-  }
+  transition: transform $transition-duration $transition-function,
+    box-shadow $transition-duration $transition-function;
 
   @include mobile {
     width: 440px;
@@ -131,6 +129,11 @@
     padding-top: 165px;
     padding-left: 65px;
     padding-right: 65px;
+
+    &:hover {
+      transform: scaley(1.01);
+      box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
