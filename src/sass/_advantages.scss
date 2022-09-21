@@ -1,15 +1,15 @@
 .advantages {
   background-color: $color-bg-main;
-  padding-bottom: 36px;
+  padding-bottom: 60px;
   padding-top: 43px;
 
   @include tablet {
-    padding-bottom: 40px;
+    padding-bottom: 202px;
     padding-top: 50px;
   }
 
   @include desctop {
-    padding-bottom: 86px;
+    padding-bottom: 179px;
     padding-top: 60px;
   }
 }
