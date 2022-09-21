@@ -48,6 +48,7 @@
       top: 12px;
       left: 0;
       transform: translate(31px);
+      border-radius: 10px;
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -174,16 +175,20 @@
     line-height: 1.22;
   }
 
-  transition: color $animation;
+  transition: color $animation, transform $animation;
 
   @media screen and (max-width: 1199px) {
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-text-dark;
     }
   }
   @media screen and (min-width: 1200px) {
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-accent;
+      transform: scale(1.1);
+      box-shadow: 0 20px 16px -16px rgba(0, 0, 0, 0.6);
     }
   }
 }
@@ -211,14 +216,21 @@
   border-radius: 10px;
   cursor: pointer;
 
-  transition: color $animation, background-color $animation;
+  transition: color $animation, background-color $animation,
+    box-shadow $animation, transform $animation;
 
-  &:hover {
-    background-color: $color-btn-hover-focus;
-  }
+  &:hover,
   &:focus {
     background-color: $color-btn-hover-focus;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+  }
+  &:focus {
     color: $color-text-light;
+  }
+
+  &:disabled {
+    border-color: $color-btn-disabled;
   }
 
   &--center {
