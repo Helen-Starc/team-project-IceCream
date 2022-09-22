@@ -3,6 +3,7 @@
     //   hero
     openModalBtnHero: document.querySelector('[data-modal-open-hero]'),
     openModalBtnHero2: document.querySelector('[data-modal-open-hero2]'),
+    openModalBtnHeroMob: document.querySelector('[data-modal-open-hero-mob]'),
     closeModalBtnHero: document.querySelector('[data-modal-close-hero]'),
     backdropHero: document.querySelector('[data-backdrop-hero]'),
 
@@ -39,6 +40,7 @@
 
   refs.openModalBtnHero2.addEventListener('click', toggleModalHero);
   refs.openModalBtnHero.addEventListener('click', toggleModalHero);
+  refs.openModalBtnHeroMob.addEventListener('click', toggleModalHero);
   refs.closeModalBtnHero.addEventListener('click', toggleModalHero);
 
   refs.openModalBtnProduct.addEventListener('click', toggleModalProduct);
