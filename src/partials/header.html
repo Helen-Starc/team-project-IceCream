@@ -2,10 +2,12 @@
   <div class="container header__container">
     <a class="logo" href="#" data-logo>
       <picture>
+
         <source srcset="
       ./images/logo@1x.png 1x, 
       ./images/logo@2x.png 2x" media="(min-width:320px)">
         <img class="logo__img" src="./images/logo@1x.png" alt="logo ice-cream" width="81" />
+
       </picture>
     </a>
 
@@ -28,22 +30,29 @@
       <nav class="header__nav">
         <ul class="site-nav">
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#header">Home</a>
+            <a class="site-nav__link" href="#header" menu-btn-nav-data1>Home</a>
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#about">How it’s made?</a>
+            <a class="site-nav__link" href="#about" menu-btn-nav-data2
+              >How it’s made?</a
+            >
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#products">Our products</a>
+            <a class="site-nav__link" href="#products" menu-btn-nav-data3
+              >Our products</a
+            >
           </li>
           <li class="site-nav__item">
-            <a class="site-nav__link" href="#contacts">Contact</a>
+            <a class="site-nav__link" href="#contacts" menu-btn-nav-data4
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
 
       <button type="button" class="header__btn header__btn--mobail" aria-controls="header__menu-container"
-        aria-expanded="false" data-modal-open-hero>
+        aria-expanded="false" data-modal-open-hero-mob>
+
         Buy now
         <svg width="12" height="12" class="header__btn-icon">
           <use href="./images/icons.svg#icon-btn-arrow"></use>
