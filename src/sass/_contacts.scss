@@ -296,12 +296,13 @@
 
   transition: color $transition-duration $transition-function,
     background-color $transition-duration $transition-function,
-    transform $transition-duration $transition-function;
+    transform $transition-duration $transition-function,
+    box-shadow $transition-duration $transition-function;
 
   &:hover,
   &:focus {
     background-color: $color-btn-hover-focus;
-
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
     transform: scale(1.1) translate(-10px);
   }
   &:focus {
@@ -324,11 +325,13 @@
   }
   transition: color $transition-duration $transition-function,
     transform $transition-duration $transition-function,
-    border-color $transition-duration $transition-function;
+    border-color $transition-duration $transition-function,
+    box-shadow $transition-duration $transition-function;
 
   &:hover,
   &:focus {
     transform: scale(1.1) translate(10px);
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
     border-color: $color-btn-hover-focus;
   }
   &:focus {
