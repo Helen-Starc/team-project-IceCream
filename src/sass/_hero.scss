@@ -317,7 +317,7 @@
   &:hover,
   &:focus {
     color: $color-link-hover;
-    transform: scale(1.1);
+    transform: scale(1.1) translatex(10px);
   }
   &:focus {
     color: $color-link-focus;
@@ -369,7 +369,7 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.1) translate(-10px);
   }
   &:focus {
     border-color: $color-btn-hover-focus;

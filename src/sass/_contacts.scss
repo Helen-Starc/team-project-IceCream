@@ -98,7 +98,7 @@
   letter-spacing: 0.04em;
   color: $color-text-orange;
 
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 
@@ -281,6 +281,19 @@
   @media screen and (min-width: 768px) {
     margin: 0;
   }
+
+  transition: color $animation, background-color $animation,
+    transform $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $color-btn-hover-focus;
+
+    transform: scale(1.1) translate(-10px);
+  }
+  &:focus {
+    color: $color-text-light;
+  }
 }
 
 .btn-border--cont {
@@ -296,8 +309,18 @@
   @media screen and (min-width: 768px) {
     margin: 0;
   }
-}
+  transition: color $animation, transform $animation,
+    border-color $transition-duration;
 
+  &:hover,
+  &:focus {
+    transform: scale(1.1) translate(10px);
+  }
+  &:focus {
+    border-color: $color-btn-hover-focus;
+    color: $color-text-light;
+  }
+}
 .icon-arrow {
   fill: transparent;
   stroke: currentColor;
