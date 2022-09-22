@@ -1,62 +1,57 @@
-<section class="section_about" id="about">
+<section class="about-adv" id="about">
   <div class="container">
-    <p class="about_name">tradition and love</p>
-    <h2 class="about_general">how it’s made?</h2>
-    <div class="about_content">
-      <div class="about_content__picture">
-        <div class="about_circle"></div>
-        <picture>
-          <source srcset="
-          ./images/about_cow_x1_mobile.jpg 1x,
-        ./images/about_cow_x2_mobile.jpg 2x" media="(min-width:320px)">
-
-          <source srcset="
-          ./images/about_cow_x1_table.jpg 1x,
-          ./images/about_cow_x2_table.jpg 2x" media="(min-width:768px)">
-
-          <source srcset="
-          ./images/about_cow_x1_desktop.jpg 1x,
-          ./images/about_cow_x2_desktop.jpg 2x" media="(min-width:1200px)">
-
-          <img src="./images/about_cow_x1_desktop.jpg" width="490" alt="cow" class="about_imege">
-
-          <img
-            src="./images/about_cow_x1_desktop.jpg"
-            width="490"
-            alt="cow"
-            class="about_imege"
-          />
-        </picture>
+    <p class="about-adv__title-text">tradition and love</p>
+    <h2 class="about-adv__title">how it’s made?</h2>
+    <div class="about-box">
+      <div class="cow-box">
+        <div class="range">
+          <picture>
+            <source srcset="
+                                    ./images/cow-desk-min.jpg 1x,
+                                    ./images/cow-desk@2x.jpg 2x" media="(min-width:1200px)">
+            <source srcset="
+                                    ./images/cow-tab-min.jpg 1x,
+                                    ./images/cow-tab@2x-min.jpg 2x" media="(min-width:768px)">
+            <source srcset="
+                                      ./images/cow-mob-min.jpg 1x,
+                                     ./images/cow-mob@2x-min.jpg 2x" media="(min-width:320px)">
+            <img class="about-adv__pick" src="./images/cow-desk-min.jpg" alt="" width="500">
+          </picture>
+        </div>
       </div>
-      <div class="about_content__general">
-        <ul class="about_content__text">
-          <li class="text_about__one">
-            <p>
-              Ice is a place where you will become not only a little happier,
-              but also healthier. Health is the main value for us, and
-            </p>
-            we follow it when creating our handmade desserts.
+      <div class="made-adout">
+        <ul class="made__list">
+          <li class="made__item">
+            <p class="made__text made__text-first--fs">Ice is a place where you will become not only
+              a little happier,
+              but
+              also healthier. Health is
+              the
+              main value for us, and
+              we follow it when creating our handmade desserts.</p>
           </li>
-          <li class="text_about__two">
-            <p>
-              We use traditional recipes and 100% natural ingredients. Our
-              products are so natural that they can be given to children from
-              the age of three years. Sweets lovers can expect 55 types of ice
-              cream, 15 types of coffee and 23 milkshakes.
-            </p>
+          <li class="made__item">
+            <p class="made__text">We use traditional recipes and 100% natural ingredients. Our
+              products
+              are so natural that
+              they
+              can be given to children
+              from the age of three years. Sweets lovers can expect 55 types of ice cream, 15
+              types of
+              coffee
+              and 23 milkshakes.</p>
           </li>
-          <li class="text_about__three">
-            <p>This is enough to choose ice cream and coffee for any mood!</p>
+          <li class="made__item">
+            <p class="made__text">This is enough to choose ice cream and coffee for any mood!</p>
           </li>
         </ul>
-        <button data-modal-open-about type="button" class="about_button">
-          Read more
-          <samp
-            ><svg class="read-more-icon" width="15" height="15">
-              <use href="./images/icons.svg#icon-btn-arrow"></use></svg
-          ></samp>
+        <button class="btn btn-about" type="button">Read more
+          <svg class="icon-arrow" width="12" height="12">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
         </button>
       </div>
+
     </div>
   </div>
 </section>

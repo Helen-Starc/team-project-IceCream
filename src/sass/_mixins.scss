@@ -30,3 +30,16 @@
     @content;
   }
 }
+
+@mixin shadow ($width, $height, $top, $left){
+  position: absolute;
+  top: $top;
+  left: $left;
+
+  margin: 0 auto;
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+
+  transform: translateX(-$left);
+}
