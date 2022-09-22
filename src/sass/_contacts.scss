@@ -98,6 +98,8 @@
   letter-spacing: 0.04em;
   color: $color-text-orange;
 
+  transition: text-decoration $transition-duration $transition-function;
+
   &:hover {
     text-decoration: underline;
   }
@@ -223,6 +225,13 @@
   line-height: 18px;
 
   color: $color-text-dark;
+
+  transition: color $transition-duration $transition-function;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 183%;
@@ -296,7 +305,6 @@
   }
   &:focus {
     color: $color-text-light;
-
   }
 }
 
@@ -319,6 +327,7 @@
   &:hover,
   &:focus {
     transform: scale(1.1) translate(10px);
+    border-color: $color-btn-hover-focus;
   }
   &:focus {
     border-color: $color-btn-hover-focus;

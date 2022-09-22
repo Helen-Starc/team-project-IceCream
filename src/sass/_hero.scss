@@ -373,6 +373,7 @@
   &:hover,
   &:focus {
     transform: scale(1.1) translate(-10px);
+    border-color: $color-btn-hover-focus;
   }
   &:focus {
     border-color: $color-btn-hover-focus;
