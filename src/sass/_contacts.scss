@@ -278,6 +278,9 @@
   line-height: 18px;
 
   color: $color-text-dark;
+  @media screen and (max-width: 767px) {
+    padding: 12px 34px;
+  }
   @media screen and (min-width: 768px) {
     margin: 0;
   }
@@ -293,6 +296,7 @@
   }
   &:focus {
     color: $color-text-light;
+
   }
 }
 
