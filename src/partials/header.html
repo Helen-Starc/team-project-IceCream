@@ -1,43 +1,23 @@
 <header class="page-header" id="header">
   <div class="container header__container">
     <a class="logo" href="#" data-logo>
-      <img
-        class="logo__img"
-        srcset="./images/logo@1x.png 1x, ./images/logo@2x.png 2x"
-        src="./images/logo@1x.png"
-        alt="logo ice-cream"
-      />
+      <picture>
+        <source srcset="
+      ./images/logo@1x.png 1x, 
+      ./images/logo@2x.png 2x" media="(min-width:320px)">
+        <img class="logo__img" src="./images/logo@1x.png" alt="logo ice-cream" width="81" />
+      </picture>
     </a>
 
-    <button
-      type="button"
-      class="btn-menu"
-      aria-controls="header__menu-container"
-      aria-expanded="false"
-      data-menu-button
-    >
-      <svg
-        width="32"
-        height="32"
-        class="header__icon-set"
-        aria-label="Переключатель мобильного меню"
-      >
-        <use
-          class="header__icon-menu"
-          href="./images/icons.svg#icon-burger-menu"
-        ></use>
-        <use
-          class="header__icon-close"
-          href="./images/icons.svg#icon-menu-close"
-        ></use>
+    <button type="button" class="btn-menu" aria-controls="header__menu-container" aria-expanded="false"
+      data-menu-button>
+      <svg width="32" height="32" class="header__icon-set" aria-label="Переключатель мобильного меню">
+        <use class="header__icon-menu" href="./images/icons.svg#icon-burger-menu"></use>
+        <use class="header__icon-close" href="./images/icons.svg#icon-menu-close"></use>
       </svg>
     </button>
 
-    <button
-      type="button"
-      class="header__btn header__btn--desktop"
-      data-modal-open-hero
-    >
+    <button type="button" class="header__btn header__btn--desktop" data-modal-open-hero>
       Buy now
       <svg width="12" height="12" class="header__btn-icon">
         <use href="./images/icons.svg#icon-btn-arrow"></use>
@@ -62,13 +42,8 @@
         </ul>
       </nav>
 
-      <button
-        type="button"
-        class="header__btn header__btn--mobail"
-        aria-controls="header__menu-container"
-        aria-expanded="false"
-        data-modal-open-hero
-      >
+      <button type="button" class="header__btn header__btn--mobail" aria-controls="header__menu-container"
+        aria-expanded="false" data-modal-open-hero>
         Buy now
         <svg width="12" height="12" class="header__btn-icon">
           <use href="./images/icons.svg#icon-btn-arrow"></use>

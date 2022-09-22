@@ -6,29 +6,20 @@
       <div class="about_content__picture">
         <div class="about_circle"></div>
         <picture>
-          <source
-            srcset="
-              ./images/about_cow_x1_mobile.jpg 1x,
-              ./images/about_cow_x2_mobile.jpg 2x
-            "
-            media="(min-widht:320px)"
-          />
 
-          <source
-            srcset="
-              ./images/about_cow_x1_table.jpg 1x,
-              ./images/about_cow_x2_table.jpg 2x
-            "
-            media="(min-widht:768px)"
-          />
+          <source srcset="
+          ./images/about_cow_x1_mobile.jpg 1x,
+        ./images/about_cow_x2_mobile.jpg 2x" media="(min-width:320px)">
 
-          <source
-            srcset="
-              ./images/about_cow_x1_desktop.jpg 1x,
-              ./images/about_cow_x2_desktop.jpg 2x
-            "
-            media="min-widht:1200px"
-          />
+          <source srcset="
+          ./images/about_cow_x1_table.jpg 1x,
+          ./images/about_cow_x2_table.jpg 2x" media="(min-width:768px)">
+
+          <source srcset="
+          ./images/about_cow_x1_desktop.jpg 1x,
+          ./images/about_cow_x2_desktop.jpg 2x" media="(min-width:1200px)">
+
+          <img src="./images/about_cow_x1_desktop.jpg" width="490" alt="cow" class="about_imege">
 
           <img
             src="./images/about_cow_x1_desktop.jpg"

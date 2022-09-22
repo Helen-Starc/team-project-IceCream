@@ -101,7 +101,7 @@
 }
 
 .about_imege {
-  width: 280px;
+  width: 279px;
   height: 280px;
   position: absolute;
   bottom: 0;
@@ -114,10 +114,10 @@
     height: 330px;
   }
 
-  @include desctop {
-    width: 490px;
-    height: 490px;
-  }
+@media screen and (min-width:1200px) {
+  width: 490px;
+  height: 490px;
+}
 }
 
 .about_content__general {
