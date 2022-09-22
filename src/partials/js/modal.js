@@ -7,6 +7,8 @@
 
     // products
     openModalBtnProduct: document.querySelector('[data-modal-open-product]'),
+    openModalBtnProduct2: document.querySelector('[data-modal-open-product2]'),
+    openModalBtnProduct3: document.querySelector('[data-modal-open-product3]'),
     closeModalBtnProduct: document.querySelector('[data-modal-close-product]'),
     backdropProduct: document.querySelector('[data-backdrop-product]'),
 
@@ -38,6 +40,8 @@
   refs.closeModalBtnHero.addEventListener('click', toggleModalHero);
 
   refs.openModalBtnProduct.addEventListener('click', toggleModalProduct);
+  refs.openModalBtnProduct2.addEventListener('click', toggleModalProduct);
+  refs.openModalBtnProduct3.addEventListener('click', toggleModalProduct);
   refs.closeModalBtnProduct.addEventListener('click', toggleModalProduct);
 
   refs.openModalBtnLocations.addEventListener('click', toggleModalLocations);
