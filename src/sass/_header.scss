@@ -216,8 +216,10 @@
   border-radius: 10px;
   cursor: pointer;
 
-  transition: color $animation, background-color $animation,
-    box-shadow $animation, transform $animation;
+  transition: color $transition-duration $transition-function,
+    background-color $transition-duration $transition-function,
+    box-shadow $transition-duration $transition-function,
+    transform $transition-duration $transition-function;
 
   &:hover,
   &:focus {

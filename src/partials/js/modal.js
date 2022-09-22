@@ -2,11 +2,14 @@
   const refs = {
     //   hero
     openModalBtnHero: document.querySelector('[data-modal-open-hero]'),
+    openModalBtnHero2: document.querySelector('[data-modal-open-hero2]'),
     closeModalBtnHero: document.querySelector('[data-modal-close-hero]'),
     backdropHero: document.querySelector('[data-backdrop-hero]'),
 
     // products
     openModalBtnProduct: document.querySelector('[data-modal-open-product]'),
+    openModalBtnProduct2: document.querySelector('[data-modal-open-product2]'),
+    openModalBtnProduct3: document.querySelector('[data-modal-open-product3]'),
     closeModalBtnProduct: document.querySelector('[data-modal-close-product]'),
     backdropProduct: document.querySelector('[data-backdrop-product]'),
 
@@ -34,10 +37,13 @@
     backdropAbout: document.querySelector('[data-backdrop-about]'),
   };
 
+  refs.openModalBtnHero2.addEventListener('click', toggleModalHero);
   refs.openModalBtnHero.addEventListener('click', toggleModalHero);
   refs.closeModalBtnHero.addEventListener('click', toggleModalHero);
 
   refs.openModalBtnProduct.addEventListener('click', toggleModalProduct);
+  refs.openModalBtnProduct2.addEventListener('click', toggleModalProduct);
+  refs.openModalBtnProduct3.addEventListener('click', toggleModalProduct);
   refs.closeModalBtnProduct.addEventListener('click', toggleModalProduct);
 
   refs.openModalBtnLocations.addEventListener('click', toggleModalLocations);
