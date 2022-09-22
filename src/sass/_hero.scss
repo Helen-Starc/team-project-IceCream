@@ -315,7 +315,8 @@
   text-decoration-line: underline;
   background-color: transparent;
 
-  transition: color $animation, transform $animation;
+  transition: color $transition-duration $transition-function,
+    transform $transition-duration $transition-function;
 
   &:hover,
   &:focus {
@@ -325,16 +326,6 @@
   &:focus {
     color: $color-link-focus;
   }
-
-  // transition: color $transition-duration $transition-function;
-
-  // &:hover {
-  //   color: $color-link-hover;
-  // }
-
-  // &:focus {
-  //   color: $color-link-focus;
-  // }
 
   &:disabled {
     color: $color-link-disabled;
@@ -367,8 +358,9 @@
   font-size: 8px;
   line-height: 10px;
 
-  transition: color $animation, transform $animation,
-    border-color $transition-duration;
+  transition: color $transition-duration $transition-function,
+    transform $transition-duration $transition-function,
+    border-color $transition-duration $transition-function;
 
   &:hover,
   &:focus {

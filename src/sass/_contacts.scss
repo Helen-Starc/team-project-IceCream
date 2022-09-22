@@ -294,8 +294,9 @@
     margin: 0;
   }
 
-  transition: color $animation, background-color $animation,
-    transform $animation;
+  transition: color $transition-duration $transition-function,
+    background-color $transition-duration $transition-function,
+    transform $transition-duration $transition-function;
 
   &:hover,
   &:focus {
@@ -321,8 +322,9 @@
   @media screen and (min-width: 768px) {
     margin: 0;
   }
-  transition: color $animation, transform $animation,
-    border-color $transition-duration;
+  transition: color $transition-duration $transition-function,
+    transform $transition-duration $transition-function,
+    border-color $transition-duration $transition-function;
 
   &:hover,
   &:focus {
