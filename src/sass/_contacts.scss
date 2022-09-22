@@ -98,6 +98,8 @@
   letter-spacing: 0.04em;
   color: $color-text-orange;
 
+  transition: text-decoration $transition-duration $transition-function;
+
   &:hover {
     text-decoration: underline;
   }
@@ -223,6 +225,13 @@
   line-height: 18px;
 
   color: $color-text-dark;
+
+  transition: color $transition-duration $transition-function;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 183%;
@@ -285,10 +294,18 @@
     margin: 0;
   }
 
-  &:hover {
+  transition: color $transition-duration $transition-function,
+    background-color $transition-duration $transition-function,
+    transform $transition-duration $transition-function;
+
+  &:hover,
+  &:focus {
     background-color: $color-btn-hover-focus;
-    transform: scale(1.1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: scale(1.1) translate(-10px);
+  }
+  &:focus {
+    color: $color-text-light;
   }
 }
 
@@ -305,8 +322,20 @@
   @media screen and (min-width: 768px) {
     margin: 0;
   }
-}
+  transition: color $transition-duration $transition-function,
+    transform $transition-duration $transition-function,
+    border-color $transition-duration $transition-function;
 
+  &:hover,
+  &:focus {
+    transform: scale(1.1) translate(10px);
+    border-color: $color-btn-hover-focus;
+  }
+  &:focus {
+    border-color: $color-btn-hover-focus;
+    color: $color-text-light;
+  }
+}
 .icon-arrow {
   fill: transparent;
   stroke: currentColor;

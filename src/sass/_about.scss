@@ -209,8 +209,10 @@
   text-align: center;
   color: $color-text-dark;
 
-  transition: color $animation, background-color $animation,
-    box-shadow $animation, transform $animation;
+  transition: color $transition-duration $transition-function,
+    background-color $transition-duration $transition-function,
+    box-shadow $transition-duration $transition-function,
+    transform $transition-duration $transition-function;
 
   &:hover,
   &:focus {
@@ -218,17 +220,11 @@
     box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
   }
+
   &:focus {
     color: $color-text-light;
   }
 
-  // &:hover,
-  // &:focus{
-  //     background-color: $color-link-hover;
-  // }
-  // &:focus{
-  //     color: $color-text-light;
-  // }
   &:disabled {
     background-color: $color-btn-disabled;
   }
